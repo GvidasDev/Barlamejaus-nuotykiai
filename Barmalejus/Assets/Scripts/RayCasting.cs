@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class RayCasting : MonoBehaviour
 {
+
     [SerializeField] float rayRange = 1.0f;
+    [SerializeField] private Transform objectGrabPointTransform;
+    [SerializeField] private LayerMask pickUpLayerMask;
     Transform cameraTransform;
+    private ObjectGrabbable objectGrabbable;
     RaycastHit hitInfo;
 
     void Start()
@@ -16,19 +20,30 @@ public class RayCasting : MonoBehaviour
 
     void Update()
     {
-        // Always draw ray for debugging
-        Ray ray = new Ray(origin: cameraTransform.position, direction: cameraTransform.forward);
-        Debug.DrawRay(ray.origin, ray.direction * rayRange,Color.red);
-        
-        if (Input.GetKeyDown(KeyCode.E))
+        Pickup();
+    }
+
+    void Pickup()
+    {
+        if(Input.GetKeyDown(KeyCode.E))
         {
-            if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hitInfo, rayRange))
+            if(objectGrabbable == null) // No object is picked up
             {
-                if (hitInfo.collider.tag != null)
+                if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hitInfo, rayRange, pickUpLayerMask))
                 {
-                    Debug.Log("Ray hit an object!");
+                    if (hitInfo.transform.TryGetComponent(out objectGrabbable))
+                    {
+                        objectGrabbable.Grab(objectGrabPointTransform);
+                        Debug.DrawRay(cameraTransform.position, cameraTransform.forward * rayRange, color: Color.green);
+                    }
                 }
             }
+            else
+            {
+                objectGrabbable.Drop();
+                objectGrabbable = null;
+            }
         }
+
     }
 }
