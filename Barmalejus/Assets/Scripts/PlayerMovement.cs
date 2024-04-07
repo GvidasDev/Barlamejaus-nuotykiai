@@ -2,7 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+<<<<<<< Updated upstream
 public class PlayerMovement : MonoBehaviour
+=======
+public class MovePlayer : MonoBehaviour
+>>>>>>> Stashed changes
 {
     [SerializeField] CharacterController controller;
 
