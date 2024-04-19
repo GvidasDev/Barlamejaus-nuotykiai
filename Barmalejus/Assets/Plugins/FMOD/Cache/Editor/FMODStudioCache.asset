@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638487257097532896
+  lastModified: 638487257090000000
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/IslandAmbience.bank
   Name: IslandAmbience
   StudioPath: bank:/IslandAmbience
-  lastModified: 638487272169417050
+  lastModified: 638487272160000000
   FileSizes:
   - Name: Desktop
     Value: 8311136
@@ -95,7 +95,7 @@ MonoBehaviour:
   - {fileID: -8743111689652163060}
   StringsBanks:
   - {fileID: 5695441910024550829}
-  cacheTime: 638487740461436554
+  cacheTime: 638487740460000000
   cacheVersion: 131617
 --- !u!114 &667046597448306576
 MonoBehaviour:
@@ -139,7 +139,7 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/ItemPickup.bank
   Name: ItemPickup
   StudioPath: bank:/ItemPickup
-  lastModified: 638487740461436554
+  lastModified: 638487740460000000
   FileSizes:
   - Name: Desktop
     Value: 10816
@@ -159,7 +159,7 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638487257097548368
+  lastModified: 638487257090000000
   FileSizes:
   - Name: Desktop
     Value: 1056
@@ -233,7 +233,7 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638487257098146600
+  lastModified: 638487257090000000
   FileSizes:
   - Name: Desktop
     Value: 21696
