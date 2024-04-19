@@ -1006,6 +1006,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1211161198554101846, guid: d795daf439c95ca4aa7add829b9cd105, type: 3}
+      propertyPath: mouseSensitivity
+      value: 250
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d795daf439c95ca4aa7add829b9cd105, type: 3}
 --- !u!1 &1518359025
@@ -1190,8 +1194,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1609415362}
   - component: {fileID: 1609415361}
-  m_Layer: 0
-  m_Name: ItemTrigger
+  - component: {fileID: 1609415363}
+  m_Layer: 3
+  m_Name: ItemTriggerZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1208,8 +1213,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.341275, y: 1, z: 4.353031}
-  m_Center: {x: -4.9587417, y: 0, z: -11.361055}
+  m_Size: {x: 3.7706127, y: 0.6807345, z: 1.7744522}
+  m_Center: {x: -4.3828154, y: -0.15963274, z: -11.602554}
 --- !u!4 &1609415362
 Transform:
   m_ObjectHideFlags: 0
@@ -1218,13 +1223,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609415360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4, y: 0.99, z: 12.7}
+  m_LocalPosition: {x: 2.59, y: 0.98, z: 10.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1609415363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609415360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52357d276edf38844b6859609d0a082a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2055013389
 PrefabInstance:
   m_ObjectHideFlags: 0
