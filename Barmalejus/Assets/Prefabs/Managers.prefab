@@ -135,3 +135,10 @@ MonoBehaviour:
       Data3: 2070315437
       Data4: 1765152885
     Path: event:/PlayerFootsteps
+  <itemPickup>k__BackingField:
+    Guid:
+      Data1: 1019934557
+      Data2: 1188535906
+      Data3: 1889911947
+      Data4: 2101267466
+    Path: event:/ItemPickupTest
