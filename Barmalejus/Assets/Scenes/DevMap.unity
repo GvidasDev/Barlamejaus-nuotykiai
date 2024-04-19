@@ -686,7 +686,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6367863458766790852, guid: cf955d1bb1655004289b63aae434a719, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6367863458766790852, guid: cf955d1bb1655004289b63aae434a719, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1180,6 +1180,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 58a5ca6f1233886498ef18c2f58c708f, type: 3}
   m_PrefabInstance: {fileID: 1581301632}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1609415360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1609415362}
+  - component: {fileID: 1609415361}
+  m_Layer: 0
+  m_Name: ItemTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1609415361
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609415360}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.341275, y: 1, z: 4.353031}
+  m_Center: {x: -4.9587417, y: 0, z: -11.361055}
+--- !u!4 &1609415362
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609415360}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.4, y: 0.99, z: 12.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2055013389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1267,7 +1312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3729239870891311785, guid: d5f8b901a10f13642b87a142a55592ce, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3729239870891311785, guid: d5f8b901a10f13642b87a142a55592ce, type: 3}
       propertyPath: m_LocalScale.x
@@ -1415,7 +1460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3134392424947975215, guid: b1cfbd095984ed24087ba0ded95939c9, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3134392424947975215, guid: b1cfbd095984ed24087ba0ded95939c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1470,10 +1515,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DevCube
       objectReference: {fileID: 0}
-    - target: {fileID: 3729239870891311781, guid: d5f8b901a10f13642b87a142a55592ce, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3729239870891311785, guid: d5f8b901a10f13642b87a142a55592ce, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1517,10 +1558,6 @@ PrefabInstance:
     - target: {fileID: 3729239870891311785, guid: d5f8b901a10f13642b87a142a55592ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3729239870891311786, guid: d5f8b901a10f13642b87a142a55592ce, type: 3}
-      propertyPath: m_Constraints
-      value: 112
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5f8b901a10f13642b87a142a55592ce, type: 3}
@@ -1720,6 +1757,10 @@ PrefabInstance:
     - target: {fileID: 3553216563400424694, guid: 9cbaeb4751033204b8af788f554035ad, type: 3}
       propertyPath: m_Name
       value: sparkPlug
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553216563400424694, guid: 9cbaeb4751033204b8af788f554035ad, type: 3}
+      propertyPath: m_TagString
+      value: Pickable
       objectReference: {fileID: 0}
     - target: {fileID: 4180570875981227596, guid: 9cbaeb4751033204b8af788f554035ad, type: 3}
       propertyPath: m_RootOrder
