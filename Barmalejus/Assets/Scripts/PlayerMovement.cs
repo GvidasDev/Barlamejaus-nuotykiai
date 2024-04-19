@@ -1,6 +1,5 @@
 using UnityEngine;
 using FMOD.Studio;
-using UnityEngine.UIElements;
 
 public class MovePlayer : MonoBehaviour
 {
@@ -32,8 +31,7 @@ public class MovePlayer : MonoBehaviour
     {
         Movement();
 
-
-        //UpdateSound();
+        UpdateSound();
 
         
     }
@@ -62,14 +60,6 @@ public class MovePlayer : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
-        if (controller.velocity.magnitude > 0.0f)
-        {
-            Debug.Log("The characater is moving");
-        }
-        else
-        {
-            Debug.Log("The character is not moving");
-        }
     }
     private void UpdateSound()
     {
