@@ -235,7 +235,7 @@ Transform:
   - {fileID: 543450652363403951}
   - {fileID: 960105134}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &284390802
 PrefabInstance:
@@ -804,6 +804,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 58a5ca6f1233886498ef18c2f58c708f, type: 3}
   m_PrefabInstance: {fileID: 984550064}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1155480295 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1155480295, guid: b1cfbd095984ed24087ba0ded95939c9, type: 3}
+  m_PrefabInstance: {fileID: 3134392425109251850}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c8a92c8c467d24b8a6999f567b8e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1301224615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -951,6 +962,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 58a5ca6f1233886498ef18c2f58c708f, type: 3}
   m_PrefabInstance: {fileID: 1335072618}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1391905894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1391905894, guid: d795daf439c95ca4aa7add829b9cd105, type: 3}
+  m_PrefabInstance: {fileID: 1472512823}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1472512823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1006,10 +1022,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1211161198554101846, guid: d795daf439c95ca4aa7add829b9cd105, type: 3}
-      propertyPath: mouseSensitivity
-      value: 250
-      objectReference: {fileID: 0}
+    - target: {fileID: 1211161198554101840, guid: d795daf439c95ca4aa7add829b9cd105, type: 3}
+      propertyPath: crosshairManager
+      value: 
+      objectReference: {fileID: 1155480295}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d795daf439c95ca4aa7add829b9cd105, type: 3}
 --- !u!1 &1518359025
@@ -1108,7 +1124,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1581301632
 PrefabInstance:
@@ -1228,7 +1244,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1609415363
 MonoBehaviour:
@@ -1471,6 +1487,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1155480295, guid: b1cfbd095984ed24087ba0ded95939c9, type: 3}
+      propertyPath: crosshairObject
+      value: 
+      objectReference: {fileID: 1391905894}
     - target: {fileID: 3134392424947975214, guid: b1cfbd095984ed24087ba0ded95939c9, type: 3}
       propertyPath: m_Name
       value: Managers
