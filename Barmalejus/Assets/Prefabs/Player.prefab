@@ -304,10 +304,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1211161198554101842}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96a0817c21af0ea498a286b82d463524, type: 3}
+  m_Script: {fileID: 11500000, guid: f3e828adbb08cb142a24e0056a6c3634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 250
+  mouseSensitivity: 100
   playerBody: {fileID: 1211161197751518601}
 --- !u!114 &1211161198554101840
 MonoBehaviour:
