@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3729239870891311782}
   - component: {fileID: 3729239870891311786}
   - component: {fileID: 3729239870891311787}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DevCube
   m_TagString: Pickable
   m_Icon: {fileID: 0}

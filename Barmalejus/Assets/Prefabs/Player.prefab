@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 1211161197751518607}
   - component: {fileID: 1211161197751515764}
   - component: {fileID: 1211161197751518600}
+  - component: {fileID: 324559712}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -90,7 +91,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211161197751515765}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000058114523}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 1.1029997, y: 1.378, z: 3.763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -197,12 +198,24 @@ MonoBehaviour:
   controller: {fileID: 1211161197751518607}
   speed: 2
   gravity: -9.18
-  jumpHeight: 3
+  jumpHeight: 1.5
   groundCheck: {fileID: 1211161197181420245}
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
+--- !u!114 &324559712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211161197751515765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914d29da3f4d557488263485165efbc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1211161198554101842
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,9 +226,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1211161198554101867}
   - component: {fileID: 1211161198554101844}
-  - component: {fileID: 1211161198554101845}
   - component: {fileID: 1211161198554101846}
   - component: {fileID: 1211161198554101840}
+  - component: {fileID: 188457266}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -282,14 +295,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &1211161198554101845
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1211161198554101842}
-  m_Enabled: 1
 --- !u!114 &1211161198554101846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,3 +326,16 @@ MonoBehaviour:
   pickUpLayerMask:
     serializedVersion: 2
     m_Bits: 119
+--- !u!114 &188457266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211161198554101842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 1211161197751515765}
