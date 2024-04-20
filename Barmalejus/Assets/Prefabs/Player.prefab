@@ -484,6 +484,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 250
   playerBody: {fileID: 1211161197751518601}
+  mainCamera: {fileID: 1211161198554101844}
+  defaultFov: 60
+  zoomSpeed: 0.2
+  zoomFov: 30
 --- !u!114 &1211161198554101840
 MonoBehaviour:
   m_ObjectHideFlags: 0

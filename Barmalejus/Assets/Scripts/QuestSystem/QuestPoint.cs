@@ -28,6 +28,8 @@ public class QuestPoint : MonoBehaviour
         GameEventsManager.instance.questEvents.onQuestStateChange -= QuestStateChange;
     }
 
+
+
     // If current held quest id is the same as Quest Point's Id
     private void QuestStateChange(Quest quest)
     {
@@ -43,6 +45,9 @@ public class QuestPoint : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             playerIsNear = true;
+            GameEventsManager.instance.questEvents.StartQuest(questId);
+            GameEventsManager.instance.questEvents.AdvanceQuest(questId);
+            GameEventsManager.instance.questEvents.FinishQuest(questId);
         }
     }
 

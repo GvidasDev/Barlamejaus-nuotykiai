@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.41977397, g: 0.64245546, b: 0.7935527, a: 1}
+  m_IndirectSpecularColor: {r: 0.419707, g: 0.6422962, b: 0.7934502, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4936,10 +4936,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3033148681169579663, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
-      propertyPath: skySpeed
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 6892804990907805013, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
       propertyPath: crosshairObject
       value: 

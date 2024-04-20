@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3505f589b253dd24388780dc6879f8a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skySpeed: 500
+  skySpeed: 0.5
 --- !u!1 &8419392448683978540
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,11 +215,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ambience>k__BackingField:
     Guid:
-      Data1: -207637546
-      Data2: 1127329123
-      Data3: -2001942138
-      Data4: -1769871990
-    Path: event:/Ambience/Wind
+      Data1: 1152816779
+      Data2: 1339689487
+      Data3: -1309139808
+      Data4: 1775430555
+    Path: event:/Ambience/Birds
   <playerFootsteps>k__BackingField:
     Guid:
       Data1: 409693513

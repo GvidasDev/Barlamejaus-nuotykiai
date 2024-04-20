@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d91e6bd2b11e474b947af94c468f759, type: 3}
   m_Name: CollectCoinsQuest
   m_EditorClassIdentifier: 
-  <id>k__BackingField: 
-  displayName: 
-  levelRequirement: 0
+  <id>k__BackingField: CollectCoinsQuest
+  displayName: Collect the coins!
+  levelRequirement: 1
   questPrerequisites: []
   questStepPrefabs: []
-  playerLevel: 0
+  playerLevel: 1
