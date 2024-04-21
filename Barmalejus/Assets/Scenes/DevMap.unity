@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4197117, g: 0.6424153, b: 0.79353553, a: 1}
+  m_IndirectSpecularColor: {r: 0.41990992, g: 0.64229304, b: 0.7933939, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2609,46 +2609,6 @@ PrefabInstance:
     - target: {fileID: 8419392449120916381, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
-      propertyPath: <newQuest>k__BackingField.Path
-      value: event:/NewQuest
-      objectReference: {fileID: 0}
-    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
-      propertyPath: <newObjective>k__BackingField.Path
-      value: event:/NewObjective
-      objectReference: {fileID: 0}
-    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
-      propertyPath: <newQuest>k__BackingField.Guid.Data1
-      value: 1691599271
-      objectReference: {fileID: 0}
-    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
-      propertyPath: <newQuest>k__BackingField.Guid.Data2
-      value: 1291451476
-      objectReference: {fileID: 0}
-    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
-      propertyPath: <newQuest>k__BackingField.Guid.Data3
-      value: 1696027805
-      objectReference: {fileID: 0}
-    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
-      propertyPath: <newQuest>k__BackingField.Guid.Data4
-      value: 859490212
-      objectReference: {fileID: 0}
-    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
-      propertyPath: <newObjective>k__BackingField.Guid.Data1
-      value: 132592602
-      objectReference: {fileID: 0}
-    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
-      propertyPath: <newObjective>k__BackingField.Guid.Data2
-      value: 1304590701
-      objectReference: {fileID: 0}
-    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
-      propertyPath: <newObjective>k__BackingField.Guid.Data3
-      value: -1636592203
-      objectReference: {fileID: 0}
-    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
-      propertyPath: <newObjective>k__BackingField.Guid.Data4
-      value: -231810241
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
