@@ -94,6 +94,7 @@ public class QuestManager : MonoBehaviour
     {
         // TODO - start the quest
         Debug.Log("Start Quest: " + id);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.newObjective,this.transform.position);
     }
 
     private void AdvanceQuest(string id)

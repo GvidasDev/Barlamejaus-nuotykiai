@@ -44,5 +44,6 @@ public class PlayerLevelManager : MonoBehaviour
             GameEventsManager.instance.playerEvents.PlayerLevelChange(currentLevel);
         }
         GameEventsManager.instance.playerEvents.ExperienceChange(currentExperience);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.questCompleted, this.transform.position);
     }
 }
