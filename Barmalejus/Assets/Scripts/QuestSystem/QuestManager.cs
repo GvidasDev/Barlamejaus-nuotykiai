@@ -23,6 +23,8 @@ public class QuestManager : MonoBehaviour
         GameEventsManager.instance.questEvents.onAdvanceQuest += AdvanceQuest;
         GameEventsManager.instance.questEvents.onFinishQuest += FinishQuest;
 
+        GameEventsManager.instance.questEvents.onQuestStepStateChange += QuestStepStateChange;
+
         GameEventsManager.instance.playerEvents.onPlayerLevelChange += PlayerLevelChange;
     }
     private void OnDisable()
@@ -30,6 +32,8 @@ public class QuestManager : MonoBehaviour
         GameEventsManager.instance.questEvents.onStartQuest -= StartQuest;
         GameEventsManager.instance.questEvents.onAdvanceQuest -= AdvanceQuest;
         GameEventsManager.instance.questEvents.onFinishQuest -= FinishQuest;
+
+        GameEventsManager.instance.questEvents.onQuestStepStateChange -= QuestStepStateChange;
 
         GameEventsManager.instance.playerEvents.onPlayerLevelChange -= PlayerLevelChange;
     }
@@ -128,6 +132,13 @@ public class QuestManager : MonoBehaviour
         GameEventsManager.instance.playerEvents.ExperienceGained(quest.info.experienceLevel);
     }
 
+    private void QuestStepStateChange(string id, int stepIndex, QuestStepState questStepState)
+    {
+        Quest quest = GetQuestById(id);
+        quest.StoreQuestStepState(questStepState, stepIndex);
+        ChangeQuestState(id, quest.state);
+    }
+
     private Dictionary<string, Quest> CreateQuestMap()
     {
         // Loads all QuestInfoSO scriptable objects under the Assets/Resources/Quests folder
@@ -155,4 +166,25 @@ public class QuestManager : MonoBehaviour
         return quest;
     }
 
+    private void OnApplicationQuit()
+    {
+        foreach(Quest quest in questMap.Values)
+        {
+            SaveQuest(quest);
+        }
+    }
+
+    private void SaveQuest(Quest quest)
+    {
+        try
+        {
+            QuestData questData = quest.GetQuestData();
+            string serializeData = JsonUtility.ToJson(questData);
+            PlayerPrefs.SetString(quest.info.id, serializeData);
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError("Failed to save quest with id " + quest.info.id + ": " + e);
+        }
+    }
 }
