@@ -6,6 +6,11 @@ public class QuestManager : MonoBehaviour
 {
 
     private Dictionary<string, Quest> questMap;
+
+    // quest start requirements
+    private int currentPlayerLevel;
+
+
     private void Awake()
     {
         questMap = CreateQuestMap();
@@ -17,12 +22,16 @@ public class QuestManager : MonoBehaviour
         GameEventsManager.instance.questEvents.onStartQuest += StartQuest;
         GameEventsManager.instance.questEvents.onAdvanceQuest += AdvanceQuest;
         GameEventsManager.instance.questEvents.onFinishQuest += FinishQuest;
+
+        GameEventsManager.instance.playerEvents.onPlayerLevelChange += PlayerLevelChange;
     }
     private void OnDisable()
     {
         GameEventsManager.instance.questEvents.onStartQuest -= StartQuest;
         GameEventsManager.instance.questEvents.onAdvanceQuest -= AdvanceQuest;
         GameEventsManager.instance.questEvents.onFinishQuest -= FinishQuest;
+
+        GameEventsManager.instance.playerEvents.onPlayerLevelChange -= PlayerLevelChange;
     }
 
     private void Start()
@@ -31,6 +40,53 @@ public class QuestManager : MonoBehaviour
         foreach(Quest quest in questMap.Values)
         {
             GameEventsManager.instance.questEvents.QuestStateChange(quest);
+        }
+    }
+
+    private void ChangeQuestState(string id, QuestState state)
+    {
+        Quest quest = GetQuestById(id);
+        quest.state = state;
+        GameEventsManager.instance.questEvents.QuestStateChange(quest);
+    }
+
+    private void PlayerLevelChange(int level)
+    {
+        currentPlayerLevel = level;
+    }
+
+    private bool CheckRequirementsMet(Quest quest)
+    {
+        // start true and prove to be false
+        bool meetsRequirements = true;
+
+        // check player level requirements
+        if(currentPlayerLevel < quest.info.levelRequirement)
+        {
+            meetsRequirements = false;
+        }
+
+        // check quest prerequisites for completion
+        foreach(QuestInfoSO prerequisiteQuestInfo in quest.info.questPrerequisites)
+        {
+            if(GetQuestById(prerequisiteQuestInfo.id).state != QuestState.FINISHED)
+            {
+                meetsRequirements = false;
+                break;
+            }
+        }
+        return meetsRequirements;
+    }
+
+    private void Update()
+    {
+        // Loop through ALL quests
+        foreach(Quest quest in questMap.Values)
+        {
+            if(quest.state == QuestState.REQUIREMENTS_NOT_MET && CheckRequirementsMet(quest))
+            {
+                ChangeQuestState(quest.info.id, QuestState.CAN_START);
+            }
         }
     }
 
