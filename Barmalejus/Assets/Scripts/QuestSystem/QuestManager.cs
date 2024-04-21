@@ -108,7 +108,7 @@ public class QuestManager : MonoBehaviour
         quest.InstantiateCurrentQuestStep(this.transform);
         ChangeQuestState(quest.info.id, QuestState.IN_PROGRESS);
 
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.newObjective,this.transform.position);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.newQuest,this.transform.position);
     }
 
     private void AdvanceQuest(string id)
@@ -117,9 +117,10 @@ public class QuestManager : MonoBehaviour
 
         // move to next step
         quest.MoveToNextStep();
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.newObjective, this.transform.position);
 
         // if there are more steps, instantiate the next one
-        if(quest.CurrentStepExists())
+        if (quest.CurrentStepExists())
         {
             quest.InstantiateCurrentQuestStep(this.transform);
         }

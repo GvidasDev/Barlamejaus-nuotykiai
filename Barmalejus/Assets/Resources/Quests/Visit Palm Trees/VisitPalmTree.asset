@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d91e6bd2b11e474b947af94c468f759, type: 3}
+  m_Name: VisitPalmTree
+  m_EditorClassIdentifier: 
+  <id>k__BackingField: VisitPalmTree
+  displayName: Visit the palm trees!
+  levelRequirement: 2
+  questPrerequisites:
+  - {fileID: 11400000, guid: 34c1d16585f44f34fa6ea5ac08b609f5, type: 2}
+  questStepPrefabs:
+  - {fileID: 349958256948117382, guid: 073c0fb870f07164aa89e44020ec4f8d, type: 3}
+  - {fileID: 349958256948117382, guid: 15992b77472276f4e95884ff7b706eff, type: 3}
+  - {fileID: 7407693352655580756, guid: 6b617d2d13d0f63499ead871480feab2, type: 3}
+  experienceLevel: 100

@@ -13,8 +13,8 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference playerFootsteps { get; private set; }
 
 
-    [field: Header("Item PickUp test")]
-    [field: SerializeField] public EventReference itemPickup { get; private set; }
+    [field: Header("New Quest")]
+    [field: SerializeField] public EventReference newQuest { get; private set; }
 
 
     [field: Header("New Objective")]
