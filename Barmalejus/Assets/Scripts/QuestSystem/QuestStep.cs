@@ -6,13 +6,21 @@ public abstract class QuestStep : MonoBehaviour
 {
     private bool isFinished = false;
 
+    // Quest step needs to know which quest it is part of
+    private string questId;
+
+    public void InitializeQuestStep(string questId)
+    {
+        this.questId = questId;
+    }
+
     protected void FinishQuestStep()
     {
         if(!isFinished)
         {
             isFinished = true;
 
-            // TODO - Advance the quest forward now that we've finished this step
+            GameEventsManager.instance.questEvents.AdvanceQuest(questId);
 
             Destroy(this.gameObject);
         }

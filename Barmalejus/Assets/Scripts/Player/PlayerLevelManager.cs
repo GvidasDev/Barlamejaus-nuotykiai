@@ -45,5 +45,6 @@ public class PlayerLevelManager : MonoBehaviour
         }
         GameEventsManager.instance.playerEvents.ExperienceChange(currentExperience);
         AudioManager.instance.PlayOneShot(FMODEvents.instance.questCompleted, this.transform.position);
+        Debug.Log("You have leveled up!");
     }
 }

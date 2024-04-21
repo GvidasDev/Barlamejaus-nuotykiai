@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d91e6bd2b11e474b947af94c468f759, type: 3}
-  m_Name: CollectCoinsQuest
+  m_Name: Deliver Bottle Quest
   m_EditorClassIdentifier: 
-  <id>k__BackingField: CollectCoinsQuest
-  displayName: Collect the coins!
-  levelRequirement: 2
+  <id>k__BackingField: Deliver Bottle Quest
+  displayName: Deliver the bottle!
+  levelRequirement: 1
   questPrerequisites: []
-  questStepPrefabs: []
-  playerLevel: 1
+  questStepPrefabs:
+  - {fileID: 3906053009633897902, guid: ad40efdefa0a18a4d90542723b8fa0a8, type: 3}
+  experienceLevel: 100

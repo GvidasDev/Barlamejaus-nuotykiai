@@ -92,23 +92,41 @@ public class QuestManager : MonoBehaviour
 
     private void StartQuest(string id)
     {
-        // TODO - start the quest
-        Debug.Log("Start Quest: " + id);
+        Quest quest = GetQuestById(id);
+        quest.InstantiateCurrentQuestStep(this.transform);
+        ChangeQuestState(quest.info.id, QuestState.IN_PROGRESS);
+
         AudioManager.instance.PlayOneShot(FMODEvents.instance.newObjective,this.transform.position);
     }
 
     private void AdvanceQuest(string id)
     {
-        // TODO - advance the quest
-        Debug.Log("Advance Quest: " + id);
+        Quest quest = GetQuestById(id);
+
+        // move to next step
+        quest.MoveToNextStep();
+
+        // if there are more steps, instantiate the next one
+        if(quest.CurrentStepExists())
+        {
+            quest.InstantiateCurrentQuestStep(this.transform);
+        }
+        else
+        {
+            ChangeQuestState(quest.info.id, QuestState.CAN_FINISH);
+        }
     }
 
     private void FinishQuest(string id)
     {
-        // TODO - finish the quest
-        Debug.Log("Finish Quest: " + id);
+        Quest quest = GetQuestById(id);
+        ClaimReward(quest);
+        ChangeQuestState(quest.info.id,QuestState.FINISHED);
     }
-
+    private void ClaimReward(Quest quest)
+    {
+        GameEventsManager.instance.playerEvents.ExperienceGained(quest.info.experienceLevel);
+    }
 
     private Dictionary<string, Quest> CreateQuestMap()
     {
