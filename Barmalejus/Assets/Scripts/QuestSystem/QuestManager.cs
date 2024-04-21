@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
+    [Header("Config")]
+    [SerializeField] private bool loadQuestState = true;
 
     private Dictionary<string, Quest> questMap;
 
@@ -40,9 +42,15 @@ public class QuestManager : MonoBehaviour
 
     private void Start()
     {
-        // broadcast the initial state of all quests on startup
+        
         foreach(Quest quest in questMap.Values)
         {
+            // initialize ant loaded quest steps
+            if(quest.state == QuestState.IN_PROGRESS)
+            {
+                quest.InstantiateCurrentQuestStep(this.transform);
+            }
+            // broadcast the initial state of all quests on startup
             GameEventsManager.instance.questEvents.QuestStateChange(quest);
         }
     }
@@ -151,7 +159,7 @@ public class QuestManager : MonoBehaviour
             {
                 Debug.LogWarning("Duplicate ID was found when creating quest map: " + questInfo.id);
             }
-            idToQuestMap.Add(questInfo.id, new Quest(questInfo));
+            idToQuestMap.Add(questInfo.id, LoadQuest(questInfo));
         }
         return idToQuestMap;
     }
@@ -186,5 +194,30 @@ public class QuestManager : MonoBehaviour
         {
             Debug.LogError("Failed to save quest with id " + quest.info.id + ": " + e);
         }
+    }
+
+    private Quest LoadQuest(QuestInfoSO questInfo)
+    {
+        Quest quest = null;
+        try
+        {
+            // Load quest data from saved data
+            if(PlayerPrefs.HasKey(questInfo.id) && loadQuestState)
+            {
+                string serializedData = PlayerPrefs.GetString(questInfo.id);
+                QuestData questData = JsonUtility.FromJson<QuestData>(serializedData);
+                quest = new Quest(questInfo, questData.state,questData.questStepIndex,questData.questStepStates);
+            }
+            // otherwise, initialize a new quest (no save data was found)
+            else
+            {
+                quest = new Quest(questInfo);
+            }
+        }
+        catch(System.Exception e)
+        {
+            Debug.LogError("Failed to load quest with id " + quest.info.id + ": " + e);
+        }
+        return quest;
     }
 }
