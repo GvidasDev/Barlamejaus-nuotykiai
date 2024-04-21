@@ -38,7 +38,6 @@ public class RayCasting : MonoBehaviour
                     {
                         objectGrabbable.Grab(objectGrabPointTransform);
 
-                        AudioManager.instance.PlayOneShot(FMODEvents.instance.itemPickup, hitInfo.transform.position);
                         Debug.DrawRay(cameraTransform.position, cameraTransform.forward * rayRange, color: Color.green);
                     }
                 }

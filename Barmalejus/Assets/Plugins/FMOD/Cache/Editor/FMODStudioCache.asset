@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638487257097532896
+  lastModified: 638493409747884504
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -67,6 +67,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 8311136
   Exists: 1
+--- !u!114 &-638410942999588382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NewObjective
+  m_EditorClassIdentifier: 
+  Path: event:/NewObjective
+  Guid:
+    Data1: 132592602
+    Data2: 1304590701
+    Data3: -1636592203
+    Data4: -231810241
+  Banks:
+  - {fileID: 8390262002069984218}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2100
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,13 +117,43 @@ MonoBehaviour:
   - {fileID: 7670830542520626703}
   - {fileID: 667046597448306576}
   - {fileID: -7985356975174201572}
+  - {fileID: 278918849111511838}
+  - {fileID: 2677005953529927349}
+  - {fileID: -638410942999588382}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8743111689652163060}
   StringsBanks:
   - {fileID: 5695441910024550829}
-  cacheTime: 638487740461436554
+  cacheTime: 638493409749565986
   cacheVersion: 131617
+--- !u!114 &278918849111511838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NewQuest
+  m_EditorClassIdentifier: 
+  Path: event:/NewQuest
+  Guid:
+    Data1: 1691599271
+    Data2: 1291451476
+    Data3: 1696027805
+    Data4: 859490212
+  Banks:
+  - {fileID: 8390262002069984218}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &667046597448306576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,6 +181,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12000
+--- !u!114 &2677005953529927349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/QuestCompleted
+  m_EditorClassIdentifier: 
+  Path: event:/QuestCompleted
+  Guid:
+    Data1: -581954382
+    Data2: 1264317844
+    Data3: 1299440814
+    Data4: 831705515
+  Banks:
+  - {fileID: 8390262002069984218}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4963
 --- !u!114 &2693932257472877142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,10 +243,10 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638487257097548368
+  lastModified: 638493409747899717
   FileSizes:
   - Name: Desktop
-    Value: 1056
+    Value: 1192
   Exists: 1
 --- !u!114 &5994540923675531446
 MonoBehaviour:
@@ -233,8 +317,8 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638487257098146600
+  lastModified: 638493409749565986
   FileSizes:
   - Name: Desktop
-    Value: 21696
+    Value: 132864
   Exists: 1

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TriggerZoneDetection : MonoBehaviour
 {
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Pickable"))

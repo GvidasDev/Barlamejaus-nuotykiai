@@ -7,6 +7,11 @@ public class Looking : MonoBehaviour
     [SerializeField] float mouseSensitivity = 100f;
 
     [SerializeField] Transform playerBody;
+    [SerializeField] Camera mainCamera;
+
+    [SerializeField] float defaultFov = 60f;
+    [SerializeField] float zoomSpeed = 0.2f;
+    [SerializeField] float zoomFov = 30f;
 
     float xRotation = 0f;
 
@@ -14,10 +19,17 @@ public class Looking : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        defaultFov = mainCamera.fieldOfView;
     }
 
     // Update is called once per frame
     void Update()
+    {
+        Look();
+        CameraZoom();
+
+    }
+    private void Look()
     {
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
@@ -27,5 +39,16 @@ public class Looking : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
+    }
+    private void CameraZoom()
+    {
+        if (Input.GetKey(KeyCode.Z))
+        {
+            mainCamera.fieldOfView = Mathf.Lerp(mainCamera.fieldOfView, zoomFov, zoomSpeed);
+        }
+        else
+        {
+            mainCamera.fieldOfView = Mathf.Lerp(mainCamera.fieldOfView, defaultFov, zoomSpeed);
+        }
     }
 }
