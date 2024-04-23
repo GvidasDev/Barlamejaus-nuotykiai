@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/IslandAmbience.bank
   Name: IslandAmbience
   StudioPath: bank:/IslandAmbience
-  lastModified: 638487272169417050
+  lastModified: 638487272160000000
   FileSizes:
   - Name: Desktop
     Value: 8311136
@@ -223,7 +223,7 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/ItemPickup.bank
   Name: ItemPickup
   StudioPath: bank:/ItemPickup
-  lastModified: 638487740461436554
+  lastModified: 638487740460000000
   FileSizes:
   - Name: Desktop
     Value: 10816
