@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 134487529990251651}
   - component: {fileID: 3902561713516506167}
   - component: {fileID: 7207605990527445580}
-  - component: {fileID: 3859689203964326127}
+  - component: {fileID: -847604363142608439}
   m_Layer: 0
-  m_Name: DeliverCoolingFan
+  m_Name: DeliverSparkPlug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,7 +100,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3859689203964326127
+--- !u!114 &-847604363142608439
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3906053009633897902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12cd5d05feb06dd4f9c64d7f136b959b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3df88e7136089cd44a5453e3b9efc411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7238729013109212608

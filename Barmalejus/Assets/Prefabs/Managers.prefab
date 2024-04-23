@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e9e3147c07ef14fb5178187c1b05eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadQuestState: 1
+  loadQuestState: 0
 --- !u!1 &401012229
 GameObject:
   m_ObjectHideFlags: 0
