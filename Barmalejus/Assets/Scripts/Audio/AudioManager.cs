@@ -9,11 +9,13 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance { get; private set; }
 
     private EventInstance ambienceEventInstance;
+    // EventInstance skyrimAmbienceInstance;
 
 
     private void Start()
     {
         InitializeAmbience(FMODEvents.instance.ambience);
+        //InitializeSkyrimAmbience(FMODEvents.instance.skyrimAmbience);
     }
     private void Awake()
     {
@@ -29,6 +31,11 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.PlayOneShot(sound, worldPos);
     }
 
+    public void SetAmbienceArea(AmbienceArea area)
+    {
+        ambienceEventInstance.setParameterByName("area", (float) area);
+    }
+
     public EventInstance CreateEventInstance(EventReference eventReference)
     {
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
@@ -40,4 +47,9 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance = CreateEventInstance(ambienceEventReference);
         ambienceEventInstance.start();
     }
+/*    private void InitializeSkyrimAmbience(EventReference skyrimAmbience)
+    {
+        skyrimAmbienceInstance = CreateEventInstance(skyrimAmbience);
+        skyrimAmbienceInstance.start();
+    }*/
 }

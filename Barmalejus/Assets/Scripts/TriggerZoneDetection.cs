@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class TriggerZoneDetection : MonoBehaviour
 {
+    [Header("Area")]
+    [SerializeField] private AmbienceArea area_Maze;
+    [SerializeField] private AmbienceArea area_Outside;
+
     private GameObject sun;
     private Light sunLight;
     private float initialIntensity;
@@ -27,6 +31,8 @@ public class TriggerZoneDetection : MonoBehaviour
         {
             shouldChange = true;
             currentLerpTime = 0f;
+
+            AudioManager.instance.SetAmbienceArea(area_Maze);
         }
     }
     private void OnTriggerExit(Collider other)
@@ -35,6 +41,8 @@ public class TriggerZoneDetection : MonoBehaviour
         {
             shouldChange = false;
             currentLerpTime = 0f;
+
+            AudioManager.instance.SetAmbienceArea(area_Outside);
         }
     }
     void Update()

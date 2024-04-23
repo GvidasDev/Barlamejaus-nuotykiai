@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 0.403
+  m_ReflectionIntensity: 0.2
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.27006936, g: 0.42243236, b: 0.52587515, a: 0.403}
+  m_IndirectSpecularColor: {r: 0.1877959, g: 0.3016766, b: 0.37894887, a: 0.2}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -316,6 +316,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52357d276edf38844b6859609d0a082a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  area_Maze: 0
+  area_Outside: 0
   duration: 2
   currentLerpTime: 0
   initialSkyboxIntensity: 0
@@ -907,6 +909,10 @@ PrefabInstance:
     - target: {fileID: 4772043186532109646, guid: 19ebd366b98f28a4c832b17135177753, type: 3}
       propertyPath: m_Name
       value: Maze
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476700426998911899, guid: 19ebd366b98f28a4c832b17135177753, type: 3}
+      propertyPath: area_Maze
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19ebd366b98f28a4c832b17135177753, type: 3}
@@ -3008,6 +3014,26 @@ PrefabInstance:
     - target: {fileID: 8419392449120916381, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <skyrimAmbience>k__BackingField.Path
+      value: event:/SkyrimAmbience
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <skyrimAmbience>k__BackingField.Guid.Data1
+      value: 1365038370
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <skyrimAmbience>k__BackingField.Guid.Data2
+      value: 1188997730
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <skyrimAmbience>k__BackingField.Guid.Data3
+      value: 1634340245
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <skyrimAmbience>k__BackingField.Guid.Data4
+      value: -903280311
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
