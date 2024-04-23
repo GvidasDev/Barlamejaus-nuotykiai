@@ -10,7 +10,7 @@ public class TriggerZoneDetection : MonoBehaviour
     private float finalIntensity = 0.1f;
     public float duration = 2f;
     public float currentLerpTime = 0f;
-    private bool shouldRotate = false;
+    private bool shouldChange = false;
     public float initialSkyboxIntensity;
     public float finalSkyboxIntensity = 0f;
 
@@ -25,7 +25,7 @@ public class TriggerZoneDetection : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            shouldRotate = true;
+            shouldChange = true;
             currentLerpTime = 0f;
         }
     }
@@ -33,13 +33,13 @@ public class TriggerZoneDetection : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            shouldRotate = false;
+            shouldChange = false;
             currentLerpTime = 0f;
         }
     }
     void Update()
     {
-        if (shouldRotate)
+        if (shouldChange)
         {
             Darken();
         }
