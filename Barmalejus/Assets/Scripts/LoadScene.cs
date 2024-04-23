@@ -32,7 +32,7 @@ public class LoadScene : MonoBehaviour
         SceneManager.LoadSceneAsync("DevMap");
         if (island.isLoaded)
         {
-            SceneManager.UnloadScene("Island");
+            SceneManager.UnloadSceneAsync("Island");
         }
     }
     void LoadIslandScene()
@@ -40,7 +40,7 @@ public class LoadScene : MonoBehaviour
         SceneManager.LoadSceneAsync("Island");
         if(devScene.isLoaded)
         {
-            SceneManager.UnloadScene("DevMap");
+            SceneManager.UnloadSceneAsync("DevMap");
         }
 
     }
