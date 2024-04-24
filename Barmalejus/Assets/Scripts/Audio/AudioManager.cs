@@ -25,17 +25,17 @@ public class AudioManager : MonoBehaviour
     private Bus sfxBus;
 
     [Header("Config")]
-    [SerializeField] private bool playSkyrimMusic;
+    [SerializeField] private bool playAmbientMusic;
     public static AudioManager instance { get; private set; }
 
     private EventInstance ambienceEventInstance;
-    private EventInstance skyrimAmbienceInstance;
+    private EventInstance musicAmbienceInstance;
 
 
     private void Start()
     {
         InitializeAmbience(FMODEvents.instance.ambience);
-        InitializeSkyrimAmbience(FMODEvents.instance.skyrimAmbience);
+        InitializeAmbientMusic(FMODEvents.instance.ambientMusic);
     }
     private void Awake()
     {
@@ -79,12 +79,12 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance = CreateEventInstance(ambienceEventReference);
         ambienceEventInstance.start();
     }
-    private void InitializeSkyrimAmbience(EventReference skyrimAmbience)
+    private void InitializeAmbientMusic(EventReference ambientMusic)
     {
-        if(playSkyrimMusic)
+        if(playAmbientMusic)
         {
-            skyrimAmbienceInstance = CreateEventInstance(skyrimAmbience);
-            skyrimAmbienceInstance.start();
+            musicAmbienceInstance = CreateEventInstance(ambientMusic);
+            musicAmbienceInstance.start();
         }
         
     }

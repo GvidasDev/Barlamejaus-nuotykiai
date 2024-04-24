@@ -318,7 +318,7 @@ MonoBehaviour:
   musicVolume: 1
   ambienceVolume: 1
   sfxVolume: 1
-  playSkyrimMusic: 1
+  playAmbientMusic: 0
 --- !u!1 &8419392449120916380
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,10 +436,10 @@ MonoBehaviour:
       Data3: 1299440814
       Data4: 831705515
     Path: event:/SFX/QuestCompleted
-  <skyrimAmbience>k__BackingField:
+  <ambientMusic>k__BackingField:
     Guid:
       Data1: 1365038370
       Data2: 1188997730
       Data3: 1634340245
       Data4: -903280311
-    Path: event:/Music/SkyrimAmbience
+    Path: event:/Music/ambience_IslandMusic

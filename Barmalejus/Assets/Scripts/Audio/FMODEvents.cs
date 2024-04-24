@@ -25,7 +25,7 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference questCompleted { get; private set; }
 
     [field: Header("Skyrim Ambience")]
-    [field: SerializeField] public EventReference skyrimAmbience { get; private set; }
+    [field: SerializeField] public EventReference ambientMusic { get; private set; }
 
     public static FMODEvents instance { get; private set; }
 
