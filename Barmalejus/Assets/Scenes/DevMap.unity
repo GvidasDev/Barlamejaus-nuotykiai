@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.2
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18782735, g: 0.30144015, b: 0.3788227, a: 0.2}
+  m_IndirectSpecularColor: {r: 0.18800968, g: 0.30172634, b: 0.37896332, a: 0.2}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3156,6 +3156,10 @@ PrefabInstance:
       propertyPath: crosshairObject
       value: 
       objectReference: {fileID: 1391905894}
+    - target: {fileID: 8419392448683978542, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: playAmbientMusic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8419392449120916380, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
       propertyPath: m_Name
       value: Managers
