@@ -6,16 +6,18 @@ using FMOD.Studio;
 
 public class AudioManager : MonoBehaviour
 {
+    [Header("Config")]
+    [SerializeField] private bool playSkyrimMusic;
     public static AudioManager instance { get; private set; }
 
     private EventInstance ambienceEventInstance;
-    // EventInstance skyrimAmbienceInstance;
+    private EventInstance skyrimAmbienceInstance;
 
 
     private void Start()
     {
         InitializeAmbience(FMODEvents.instance.ambience);
-        //InitializeSkyrimAmbience(FMODEvents.instance.skyrimAmbience);
+        InitializeSkyrimAmbience(FMODEvents.instance.skyrimAmbience);
     }
     private void Awake()
     {
@@ -47,9 +49,13 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance = CreateEventInstance(ambienceEventReference);
         ambienceEventInstance.start();
     }
-/*    private void InitializeSkyrimAmbience(EventReference skyrimAmbience)
+    private void InitializeSkyrimAmbience(EventReference skyrimAmbience)
     {
-        skyrimAmbienceInstance = CreateEventInstance(skyrimAmbience);
-        skyrimAmbienceInstance.start();
-    }*/
+        if(playSkyrimMusic)
+        {
+            skyrimAmbienceInstance = CreateEventInstance(skyrimAmbience);
+            skyrimAmbienceInstance.start();
+        }
+        
+    }
 }

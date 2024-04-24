@@ -41,38 +41,11 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638495179596644480
+  lastModified: 638495461897734254
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 1486
   Exists: 1
---- !u!114 &-7985356975174201572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ItemPickupTest
-  m_EditorClassIdentifier: 
-  Path: event:/ItemPickupTest
-  Guid:
-    Data1: 1019934557
-    Data2: 1188535906
-    Data3: 1889911947
-    Data4: 2101267466
-  Banks:
-  - {fileID: 2693932257472877142}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 630
 --- !u!114 &-7468688015936899990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,6 +74,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-7272546952813717210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/SkyrimAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/Music/SkyrimAmbience
+  Guid:
+    Data1: 1365038370
+    Data2: 1188997730
+    Data3: 1634340245
+    Data4: -903280311
+  Banks:
+  - {fileID: 24489227229404179}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 123297
 --- !u!114 &-6090898761697393263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,12 +116,12 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/IslandAmbience.bank
   Name: IslandAmbience
   StudioPath: bank:/IslandAmbience
-  lastModified: 638495179596527528
+  lastModified: 638495461897582369
   FileSizes:
   - Name: Desktop
     Value: 51178688
   Exists: 1
---- !u!114 &-638410942999588382
+--- !u!114 &-5918652169058446395
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,23 +131,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/NewObjective
+  m_Name: event:/SFX/PlayerFootsteps
   m_EditorClassIdentifier: 
-  Path: event:/NewObjective
+  Path: event:/SFX/PlayerFootsteps
   Guid:
-    Data1: 132592602
-    Data2: 1304590701
-    Data3: -1636592203
-    Data4: -231810241
+    Data1: 409693513
+    Data2: 1149735297
+    Data3: 2070315437
+    Data4: 1765152885
   Banks:
   - {fileID: 8390262002069984218}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2100
+  Length: 560
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,23 +165,21 @@ MonoBehaviour:
   - {fileID: -8743111689652163060}
   - {fileID: 8390262002069984218}
   - {fileID: -6090898761697393263}
-  - {fileID: 2693932257472877142}
   - {fileID: 24489227229404179}
   EditorEvents:
-  - {fileID: 5994540923675531446}
-  - {fileID: -7985356975174201572}
-  - {fileID: 278918849111511838}
-  - {fileID: 2677005953529927349}
-  - {fileID: -638410942999588382}
-  - {fileID: 5377557693844551034}
   - {fileID: -7468688015936899990}
   - {fileID: 8418678349464411445}
+  - {fileID: -7272546952813717210}
+  - {fileID: -5918652169058446395}
+  - {fileID: 8232435281129123855}
+  - {fileID: 3523144473393584381}
+  - {fileID: 5296168026029099825}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8743111689652163060}
   StringsBanks:
   - {fileID: 5695441910024550829}
-  cacheTime: 638495179596664598
+  cacheTime: 638495461898649993
   cacheVersion: 131617
 --- !u!114 &24489227229404179
 MonoBehaviour:
@@ -198,12 +196,12 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638495159759261471
+  lastModified: 638495461898240614
   FileSizes:
   - Name: Desktop
     Value: 1432224
   Exists: 1
---- !u!114 &278918849111511838
+--- !u!114 &3523144473393584381
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,36 +211,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/NewQuest
+  m_Name: event:/SFX/QuestCompleted
   m_EditorClassIdentifier: 
-  Path: event:/NewQuest
-  Guid:
-    Data1: 1691599271
-    Data2: 1291451476
-    Data3: 1696027805
-    Data4: 859490212
-  Banks:
-  - {fileID: 8390262002069984218}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &2677005953529927349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/QuestCompleted
-  m_EditorClassIdentifier: 
-  Path: event:/QuestCompleted
+  Path: event:/SFX/QuestCompleted
   Guid:
     Data1: -581954382
     Data2: 1264317844
@@ -257,27 +228,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4963
---- !u!114 &2693932257472877142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/ItemPickup.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/ItemPickup.bank
-  Name: ItemPickup
-  StudioPath: bank:/ItemPickup
-  lastModified: 638487740461436554
-  FileSizes:
-  - Name: Desktop
-    Value: 10816
-  Exists: 1
---- !u!114 &5377557693844551034
+--- !u!114 &5296168026029099825
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,23 +238,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SkyrimAmbience
+  m_Name: event:/SFX/NewObjective
   m_EditorClassIdentifier: 
-  Path: event:/SkyrimAmbience
+  Path: event:/SFX/NewObjective
   Guid:
-    Data1: 1365038370
-    Data2: 1188997730
-    Data3: 1634340245
-    Data4: -903280311
+    Data1: 132592602
+    Data2: 1304590701
+    Data3: -1636592203
+    Data4: -231810241
   Banks:
-  - {fileID: 24489227229404179}
-  IsStream: 1
+  - {fileID: 8390262002069984218}
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 123297
+  Length: 2100
 --- !u!114 &5695441910024550829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,12 +270,12 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638495179596664598
+  lastModified: 638495461897759514
   FileSizes:
   - Name: Desktop
-    Value: 1330
+    Value: 1364
   Exists: 1
---- !u!114 &5994540923675531446
+--- !u!114 &8232435281129123855
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -334,23 +285,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/PlayerFootsteps
+  m_Name: event:/SFX/NewQuest
   m_EditorClassIdentifier: 
-  Path: event:/PlayerFootsteps
+  Path: event:/SFX/NewQuest
   Guid:
-    Data1: 409693513
-    Data2: 1149735297
-    Data3: 2070315437
-    Data4: 1765152885
+    Data1: 1691599271
+    Data2: 1291451476
+    Data3: 1696027805
+    Data4: 859490212
   Banks:
   - {fileID: 8390262002069984218}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 560
+  Length: 2000
 --- !u!114 &8390262002069984218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,7 +317,7 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638493409749565986
+  lastModified: 638495461898649993
   FileSizes:
   - Name: Desktop
     Value: 132864

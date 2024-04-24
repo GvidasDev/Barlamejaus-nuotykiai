@@ -552,7 +552,6 @@ MonoBehaviour:
   - Master
   Banks:
   - IslandAmbience
-  - ItemPickup
   - Music
   - SFX
   BanksToLoad: []
