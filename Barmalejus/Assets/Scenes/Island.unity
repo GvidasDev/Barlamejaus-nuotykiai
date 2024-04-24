@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.419707, g: 0.6422962, b: 0.7934502, a: 1}
+  m_IndirectSpecularColor: {r: 0.41980064, g: 0.64226615, b: 0.7933843, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4987,6 +4987,22 @@ PrefabInstance:
     - target: {fileID: 8419392449120916381, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <newQuest>k__BackingField.Path
+      value: event:/SFX/NewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <newObjective>k__BackingField.Path
+      value: event:/SFX/NewObjective
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <questCompleted>k__BackingField.Path
+      value: event:/SFX/QuestCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <playerFootsteps>k__BackingField.Path
+      value: event:/SFX/PlayerFootsteps
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}

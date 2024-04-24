@@ -4892,5 +4892,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52357d276edf38844b6859609d0a082a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 2
+  area_Maze: 1
+  area_Outside: 0
+  duration: 1
   currentLerpTime: 0
+  initialSkyboxIntensity: 0
+  finalSkyboxIntensity: 0

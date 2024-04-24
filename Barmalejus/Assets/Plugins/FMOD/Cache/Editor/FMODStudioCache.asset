@@ -41,7 +41,7 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638495461897734254
+  lastModified: 638495542312053557
   FileSizes:
   - Name: Desktop
     Value: 1486
@@ -74,33 +74,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-7272546952813717210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/SkyrimAmbience
-  m_EditorClassIdentifier: 
-  Path: event:/Music/SkyrimAmbience
-  Guid:
-    Data1: 1365038370
-    Data2: 1188997730
-    Data3: 1634340245
-    Data4: -903280311
-  Banks:
-  - {fileID: 24489227229404179}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 123297
 --- !u!114 &-6090898761697393263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,17 +142,17 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: -7468688015936899990}
   - {fileID: 8418678349464411445}
-  - {fileID: -7272546952813717210}
   - {fileID: -5918652169058446395}
   - {fileID: 8232435281129123855}
   - {fileID: 3523144473393584381}
   - {fileID: 5296168026029099825}
+  - {fileID: 7523733510474565525}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8743111689652163060}
   StringsBanks:
   - {fileID: 5695441910024550829}
-  cacheTime: 638495461898649993
+  cacheTime: 638495542359073383
   cacheVersion: 131617
 --- !u!114 &24489227229404179
 MonoBehaviour:
@@ -196,10 +169,10 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638495461898240614
+  lastModified: 638495542359073383
   FileSizes:
   - Name: Desktop
-    Value: 1432224
+    Value: 2462880
   Exists: 1
 --- !u!114 &3523144473393584381
 MonoBehaviour:
@@ -270,11 +243,38 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638495461897759514
+  lastModified: 638495542312068760
   FileSizes:
   - Name: Desktop
-    Value: 1364
+    Value: 1370
   Exists: 1
+--- !u!114 &7523733510474565525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/ambience_IslandMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/ambience_IslandMusic
+  Guid:
+    Data1: 1365038370
+    Data2: 1188997730
+    Data3: 1634340245
+    Data4: -903280311
+  Banks:
+  - {fileID: 24489227229404179}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 240901
 --- !u!114 &8232435281129123855
 MonoBehaviour:
   m_ObjectHideFlags: 0

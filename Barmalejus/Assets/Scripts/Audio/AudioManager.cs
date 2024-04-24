@@ -6,6 +6,24 @@ using FMOD.Studio;
 
 public class AudioManager : MonoBehaviour
 {
+    [Header("Volume")]
+    [Range(0, 1)]
+    public float masterVolume = 1;
+
+    [Range(0, 1)]
+    public float musicVolume = 1;
+
+    [Range (0, 1)]
+    public float ambienceVolume = 1;
+
+    [Range(0, 1)]
+    public float sfxVolume = 1;
+
+    private Bus masterBus;
+    private Bus musicBus;
+    private Bus ambienceBus;
+    private Bus sfxBus;
+
     [Header("Config")]
     [SerializeField] private bool playSkyrimMusic;
     public static AudioManager instance { get; private set; }
@@ -26,6 +44,18 @@ public class AudioManager : MonoBehaviour
             Debug.LogError("Found more than one Audio Manager in the scene!");
         }
         instance = this;
+
+        masterBus = RuntimeManager.GetBus("bus:/");
+        musicBus = RuntimeManager.GetBus("bus:/Music");
+        ambienceBus = RuntimeManager.GetBus("bus:/Ambience");
+        sfxBus = RuntimeManager.GetBus("bus:/SFX");
+    }
+    private void Update()
+    {
+        masterBus.setVolume(masterVolume);
+        musicBus.setVolume(musicVolume);
+        ambienceBus.setVolume(ambienceVolume);
+        sfxBus.setVolume(sfxVolume);
     }
 
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
