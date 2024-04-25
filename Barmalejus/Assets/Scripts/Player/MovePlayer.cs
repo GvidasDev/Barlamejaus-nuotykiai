@@ -1,5 +1,6 @@
 using UnityEngine;
 using FMOD.Studio;
+using JetBrains.Annotations;
 
 public class MovePlayer : MonoBehaviour
 {
@@ -62,6 +63,10 @@ public class MovePlayer : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
+        }
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            controller.Move(move * (speed + 0.5f) * Time.deltaTime);
         }
 
         velocity.y += gravity * Time.deltaTime;

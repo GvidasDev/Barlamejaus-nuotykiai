@@ -9,6 +9,7 @@ TagManager:
   - Bottle
   - SparkPlug
   - Sun
+  - Radiator
   layers:
   - Default
   - TransparentFX
