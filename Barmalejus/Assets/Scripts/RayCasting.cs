@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 public class RayCasting : MonoBehaviour
@@ -10,6 +11,7 @@ public class RayCasting : MonoBehaviour
     [SerializeField] private LayerMask pickUpLayerMask;
     Transform cameraTransform;
     private ObjectGrabbable objectGrabbable;
+    [SerializeField] CrosshairManager crosshairManager;
     RaycastHit hitInfo;
 
     void Start()
@@ -20,22 +22,22 @@ public class RayCasting : MonoBehaviour
 
     void Update()
     {
-        Pickup();
+        PickupItem();
+        AdjustCrossair();
     }
 
-    void Pickup()
+    void PickupItem()
     {
         if(Input.GetKeyDown(KeyCode.E))
         {
             if(objectGrabbable == null) // No object is picked up
             {
-                if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hitInfo, rayRange, pickUpLayerMask))
+                if (Physics.Raycast(origin: cameraTransform.position, direction: cameraTransform.forward, out hitInfo, rayRange, pickUpLayerMask))
                 {
                     if (hitInfo.transform.TryGetComponent(out objectGrabbable))
                     {
                         objectGrabbable.Grab(objectGrabPointTransform);
 
-                        AudioManager.instance.PlayOneShot(FMODEvents.instance.itemPickup, hitInfo.transform.position);
                         Debug.DrawRay(cameraTransform.position, cameraTransform.forward * rayRange, color: Color.green);
                     }
                 }
@@ -47,5 +49,20 @@ public class RayCasting : MonoBehaviour
             }
         }
 
+    }
+    void AdjustCrossair()
+    {
+        if(Physics.Raycast(origin: cameraTransform.position, direction: cameraTransform.forward, out hitInfo, rayRange, pickUpLayerMask))
+        {
+            Debug.DrawRay(start: cameraTransform.position, dir: cameraTransform.forward,color: Color.red);
+            if(hitInfo.transform.tag == "Pickable")
+            {
+                crosshairManager.ChangeCrosshairSize(300);
+            }
+        }
+        else
+        {
+            crosshairManager.ChangeCrosshairSize(100);
+        }
     }
 }

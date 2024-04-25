@@ -5,11 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pickable
+  - CoolingFan
+  - Bottle
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Trigger
   - Water
   - UI
   - Post Processing
