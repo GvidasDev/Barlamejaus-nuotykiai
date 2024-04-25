@@ -89,10 +89,10 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/IslandAmbience.bank
   Name: IslandAmbience
   StudioPath: bank:/IslandAmbience
-  lastModified: 638495461897582369
+  lastModified: 638496546113115595
   FileSizes:
   - Name: Desktop
-    Value: 51178688
+    Value: 53640256
   Exists: 1
 --- !u!114 &-5918652169058446395
 MonoBehaviour:
@@ -152,7 +152,7 @@ MonoBehaviour:
   - {fileID: -8743111689652163060}
   StringsBanks:
   - {fileID: 5695441910024550829}
-  cacheTime: 638495542359073383
+  cacheTime: 638496546113115595
   cacheVersion: 131617
 --- !u!114 &24489227229404179
 MonoBehaviour:

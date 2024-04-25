@@ -11,5 +11,13 @@ public class InputManager : MonoBehaviour
         {
             GameEventsManager.instance.inputEvents.SubmitPressed();
         }
+        if(Input.GetKey(KeyCode.G))
+        {
+            GameEventsManager.instance.inputEvents.ShowCompassPressed();
+        }
+        if(Input.GetKeyUp(KeyCode.G))
+        {
+            GameEventsManager.instance.inputEvents.HideCompassPressed();
+        }
     }
 }
