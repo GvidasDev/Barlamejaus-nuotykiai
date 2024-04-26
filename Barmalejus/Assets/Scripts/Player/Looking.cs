@@ -14,7 +14,7 @@ public class Looking : MonoBehaviour
     [SerializeField] float zoomFov = 30f;
 
     float xRotation = 0f;
-
+    private bool enableLook;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,8 +25,12 @@ public class Looking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Look();
-        CameraZoom();
+        if(enableLook)
+        {
+            Look();
+            CameraZoom();
+        }
+
 
     }
     private void Look()
@@ -50,5 +54,14 @@ public class Looking : MonoBehaviour
         {
             mainCamera.fieldOfView = Mathf.Lerp(mainCamera.fieldOfView, defaultFov, zoomSpeed);
         }
+    }
+    public void EnableLook()
+    {
+        enableLook = true;
+    }
+
+    public void DisableLook()
+    {
+        enableLook = false;
     }
 }

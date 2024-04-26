@@ -370,14 +370,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1211161197751518607}
-  speed: 2
-  gravity: -9.18
-  jumpHeight: 1.5
   groundCheck: {fileID: 1211161197181420245}
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
     m_Bits: 128
+  speed: 6
+  gravity: -9.18
+  jumpHeight: 1.5
 --- !u!114 &324559712
 MonoBehaviour:
   m_ObjectHideFlags: 0

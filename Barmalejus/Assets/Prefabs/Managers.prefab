@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e9e3147c07ef14fb5178187c1b05eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadQuestState: 1
+  loadQuestState: 0
 --- !u!1 &401012229
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,6 +314,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea9c12407d660264b895cb72231c478c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masterVolume: 1
+  musicVolume: 1
+  ambienceVolume: 1
+  sfxVolume: 1
+  playAmbientMusic: 0
 --- !u!1 &8419392449120916380
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,25 +414,32 @@ MonoBehaviour:
       Data2: 1149735297
       Data3: 2070315437
       Data4: 1765152885
-    Path: event:/PlayerFootsteps
+    Path: event:/SFX/PlayerFootsteps
   <newQuest>k__BackingField:
     Guid:
       Data1: 1691599271
       Data2: 1291451476
       Data3: 1696027805
       Data4: 859490212
-    Path: event:/NewQuest
+    Path: event:/SFX/NewQuest
   <newObjective>k__BackingField:
     Guid:
       Data1: 132592602
       Data2: 1304590701
       Data3: -1636592203
       Data4: -231810241
-    Path: event:/NewObjective
+    Path: event:/SFX/NewObjective
   <questCompleted>k__BackingField:
     Guid:
       Data1: -581954382
       Data2: 1264317844
       Data3: 1299440814
       Data4: 831705515
-    Path: event:/QuestCompleted
+    Path: event:/SFX/QuestCompleted
+  <ambientMusic>k__BackingField:
+    Guid:
+      Data1: 1365038370
+      Data2: 1188997730
+      Data3: 1634340245
+      Data4: -903280311
+    Path: event:/Music/ambience_IslandMusic

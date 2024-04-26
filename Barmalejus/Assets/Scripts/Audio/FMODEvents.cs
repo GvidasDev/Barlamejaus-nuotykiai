@@ -24,6 +24,7 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Quest Completed")]
     [field: SerializeField] public EventReference questCompleted { get; private set; }
 
+
     public static FMODEvents instance { get; private set; }
 
     private void Awake()
