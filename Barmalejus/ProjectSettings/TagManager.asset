@@ -7,6 +7,9 @@ TagManager:
   - Pickable
   - CoolingFan
   - Bottle
+  - SparkPlug
+  - Sun
+  - Radiator
   layers:
   - Default
   - TransparentFX

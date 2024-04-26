@@ -1,5 +1,6 @@
 using UnityEngine;
 using FMOD.Studio;
+using JetBrains.Annotations;
 
 public class MovePlayer : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class MovePlayer : MonoBehaviour
 
     Vector3 velocity;
     bool isGrounded;
+    private bool canMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -29,11 +31,15 @@ public class MovePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Movement();
+        if (canMove)
+        {
+            Movement();
 
-        UpdateSound();
+        }
+        //UpdateSound();
 
-        
+
+
     }
     private void Movement()
     {
@@ -50,12 +56,17 @@ public class MovePlayer : MonoBehaviour
 
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move * speed * Time.deltaTime);
-        
+        UpdateSound();
+
 
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
+        }
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            controller.Move(move * (speed + 0.5f) * Time.deltaTime);
         }
 
         velocity.y += gravity * Time.deltaTime;
@@ -63,7 +74,7 @@ public class MovePlayer : MonoBehaviour
     }
     private void UpdateSound()
     {
-        if( controller.velocity.magnitude > 0.0f && isGrounded)
+        if( controller.velocity.magnitude > 2.5f && isGrounded)
         {
             // start footsteps event if it's not already playing
             PLAYBACK_STATE playbackState;
@@ -77,7 +88,14 @@ public class MovePlayer : MonoBehaviour
         else
         {
             playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
-            Debug.Log("Is grounded" + isGrounded);
         }
+    }
+    public void EnableMovement()
+    {
+        canMove = true;
+    }
+    public void DisableMovement()
+    {
+        canMove = false;
     }
 }

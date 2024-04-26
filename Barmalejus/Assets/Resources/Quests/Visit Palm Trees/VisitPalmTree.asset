@@ -20,5 +20,5 @@ MonoBehaviour:
   questStepPrefabs:
   - {fileID: 349958256948117382, guid: 073c0fb870f07164aa89e44020ec4f8d, type: 3}
   - {fileID: 349958256948117382, guid: 15992b77472276f4e95884ff7b706eff, type: 3}
-  - {fileID: 7407693352655580756, guid: 6b617d2d13d0f63499ead871480feab2, type: 3}
+  - {fileID: 3906053009633897902, guid: c9f67c90788eddd43a367ccdf454c6e7, type: 3}
   experienceLevel: 100

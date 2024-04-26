@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea9c12407d660264b895cb72231c478c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSkyrimMusic: 0
 --- !u!1 &3134392425521368389
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,14 +182,35 @@ MonoBehaviour:
       Data2: 1149735297
       Data3: 2070315437
       Data4: 1765152885
-    Path: event:/PlayerFootsteps
-  <itemPickup>k__BackingField:
+    Path: event:/SFX/PlayerFootsteps
+  <newQuest>k__BackingField:
     Guid:
-      Data1: 1019934557
-      Data2: 1188535906
-      Data3: 1889911947
-      Data4: 2101267466
-    Path: event:/ItemPickupTest
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <newObjective>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <questCompleted>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <skyrimAmbience>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &4373817150380963487
 GameObject:
   m_ObjectHideFlags: 0
