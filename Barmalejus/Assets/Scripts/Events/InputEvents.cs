@@ -47,5 +47,22 @@ public class InputEvents
         }
     }
 
+    public event Action onShowRiddleUIPressed;
+    public void ShowRiddleUIPressed()
+    {
+        if(onShowRiddleUIPressed != null)
+        {
+            onShowRiddleUIPressed();
+        }
+    }
+
+    public event Action onHideRiddleUIPressed;
+    public void HideRiddleUIPressed()
+    {
+        if (onHideRiddleUIPressed != null)
+        {
+            onHideRiddleUIPressed();
+        }
+    }
 
 }

@@ -2,15 +2,27 @@ using UnityEngine;
 
 public class ToggleObjectWithQ : MonoBehaviour
 {
-    public GameObject objectToToggle;
+    [SerializeField] GameObject toggleRiddleUI;
 
-    void Update()
+    private void OnEnable()
     {
-        // Check if the 'Q' key is pressed
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            // Toggle the visibility of the object
-            objectToToggle.SetActive(!objectToToggle.activeSelf);
-        }
+        GameEventsManager.instance.inputEvents.onShowRiddleUIPressed += ShowRiddleUIPressed;
+        GameEventsManager.instance.inputEvents.onHideRiddleUIPressed += HideRiddleUIPressed;
+    }
+
+    private void OnDisable()
+    {
+        GameEventsManager.instance.inputEvents.onShowRiddleUIPressed -= ShowRiddleUIPressed;
+        GameEventsManager.instance.inputEvents.onHideRiddleUIPressed -= HideRiddleUIPressed;
+    }
+
+    private void ShowRiddleUIPressed()
+    {
+        toggleRiddleUI.SetActive(true);
+    }
+
+    private void HideRiddleUIPressed()
+    {
+        toggleRiddleUI.SetActive(false);
     }
 }
