@@ -11,7 +11,7 @@ public class FindStomp : QuestStep
     private void Start()
     {
         string status = "A stomp in the forest atop the island awaits your arrival, when this is done then read this map";
-        Debug.Log(status);
+
         GameEventsManager.instance.riddleUIEvents.RiddleProgress(id,status);
     }
 

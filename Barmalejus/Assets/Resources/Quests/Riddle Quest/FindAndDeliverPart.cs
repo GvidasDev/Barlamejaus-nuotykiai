@@ -10,7 +10,7 @@ public class FindAndDeliverPart : QuestStep
     private void Start()
     {
         string status = "The treasure is close, but you're not done, head 5 paces West, grab it and run";
-        Debug.Log(status);
+
         GameEventsManager.instance.riddleUIEvents.RiddleProgress(id,status);
     }
 

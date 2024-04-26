@@ -6,11 +6,10 @@ using UnityEngine.UI;
 
 public class RiddleTextController : MonoBehaviour
 {
+    // To determine which Riddle text object should be changed
+    private int id;
 
-    [SerializeField] private int id;
-    //private TextMeshProUGUI riddleText;
-    //private Color textColor;
-
+    // Store riddles into array to access their data even when 
     public GameObject[] objectsArray;
 
     private void OnEnable()
@@ -38,7 +37,6 @@ public class RiddleTextController : MonoBehaviour
     private void RiddleProgress(int id,string status)
     {
          ShowText(id,status);
-
     }
 
     private void ShowText(int id, string status)
