@@ -15,7 +15,10 @@ public class ToggleObjectWithQ : MonoBehaviour
         GameEventsManager.instance.inputEvents.onShowRiddleUIPressed -= ShowRiddleUIPressed;
         GameEventsManager.instance.inputEvents.onHideRiddleUIPressed -= HideRiddleUIPressed;
     }
-
+    private void Start()
+    {
+        toggleRiddleUI.SetActive(false);
+    }
     private void ShowRiddleUIPressed()
     {
         toggleRiddleUI.SetActive(true);
