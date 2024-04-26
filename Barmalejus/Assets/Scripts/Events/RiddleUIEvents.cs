@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RiddleUIEvents : MonoBehaviour
+public class RiddleUIEvents
 {
 
     public event Action<int, string> onRiddleProgress;
