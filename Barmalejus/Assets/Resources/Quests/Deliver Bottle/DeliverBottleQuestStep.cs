@@ -11,9 +11,9 @@ public class DeliverBottleQuestStep : QuestStep
     private TextMeshProUGUI text;
     private void Start()
     {
+        string status = "Deliver the bottle to the boat!";
         textMeshPro = GameObject.Find("QuestSteps");
         text = textMeshPro.GetComponent<TextMeshProUGUI>();
-        string status = "Deliver the bottle to the boat!";
         text.text = status;
         ChangeState("");
         Debug.Log(status);

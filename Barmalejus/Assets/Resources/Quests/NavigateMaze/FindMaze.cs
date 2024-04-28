@@ -1,14 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider))]
 public class FindMaze : QuestStep
 {
-
+    private GameObject textMeshPro;
+    private TextMeshProUGUI text;
     private void Start()
     {
-        string status = "Find the maze!";
+        string status = "Find the maze";
+        textMeshPro = GameObject.Find("QuestSteps");
+        text = textMeshPro.GetComponent<TextMeshProUGUI>();
+        text.text = status;
+        ChangeState("");
         Debug.Log(status);
 
 
@@ -18,6 +24,7 @@ public class FindMaze : QuestStep
     {
         if (other.CompareTag("Player")) 
         {
+            ChangeState("");
             FinishQuestStep();
         }
     }

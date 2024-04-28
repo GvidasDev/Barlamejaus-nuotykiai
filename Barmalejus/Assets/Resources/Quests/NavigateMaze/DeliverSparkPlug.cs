@@ -1,13 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider))]
 public class DeliverSparkPlug : QuestStep
 {
+    private GameObject textMeshPro;
+    private TextMeshProUGUI text;
     private void Start()
     {
-        string status = "Deliver Spark Plug to the boat!";
+        string status = "Deliver Spark Plug to the boat";
+        textMeshPro = GameObject.Find("QuestSteps");
+        text = textMeshPro.GetComponent<TextMeshProUGUI>();
+        text.text = status;
+        ChangeState("");
         Debug.Log(status);
     }
     private void OnTriggerEnter(Collider other)
@@ -15,7 +22,9 @@ public class DeliverSparkPlug : QuestStep
         if (other.CompareTag("SparkPlug"))
         {
             string status = "Spark Plug has been delivered to the boat. Return to the maze marker!";
+            text.text = status;
             Debug.Log(status);
+            ChangeState("");
             FinishQuestStep();
         }
     }
