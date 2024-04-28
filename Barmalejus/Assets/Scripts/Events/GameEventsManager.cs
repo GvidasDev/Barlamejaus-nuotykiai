@@ -9,6 +9,7 @@ public class GameEventsManager : MonoBehaviour
     public QuestEvents questEvents;
     public InputEvents inputEvents;
     public PlayerEvents playerEvents;
+    public RiddleUIEvents riddleUIEvents;
 
     private void Awake()
     {
@@ -22,5 +23,6 @@ public class GameEventsManager : MonoBehaviour
         questEvents = new QuestEvents();
         inputEvents = new InputEvents();
         playerEvents = new PlayerEvents();
+        riddleUIEvents = new RiddleUIEvents();
     }
 }

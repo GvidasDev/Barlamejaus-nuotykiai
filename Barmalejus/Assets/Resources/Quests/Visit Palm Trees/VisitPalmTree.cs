@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider))]
 public class VisitPalmTree : QuestStep
 {
+
     private void Start()
     {
         string status = "Visit the smallest tilted palm tree!";

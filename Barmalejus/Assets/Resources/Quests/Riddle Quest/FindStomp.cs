@@ -5,23 +5,32 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider))]
 public class FindStomp : QuestStep
 {
+    [SerializeField] private int id;
+    private bool playerInRange = false;
+
     private void Start()
     {
         string status = "A stomp in the forest atop the island awaits your arrival, when this is done then read this map";
-        Debug.Log(status);
+
+        GameEventsManager.instance.riddleUIEvents.RiddleProgress(id,status);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag.Equals("Player"))
         {
+            playerInRange = true;
             InputCheck();
         }
     }
 
     private void Update()
     {
-        InputCheck();
+        if (playerInRange)
+        {
+            InputCheck();
+        }
+        
     }
 
     private void InputCheck()

@@ -24,6 +24,8 @@ public class AudioManager : MonoBehaviour
     private Bus ambienceBus;
     private Bus sfxBus;
 
+
+    private List<EventInstance> eventInstances;
     public static AudioManager instance { get; private set; }
 
     private EventInstance ambienceEventInstance;
@@ -40,6 +42,8 @@ public class AudioManager : MonoBehaviour
             Debug.LogError("Found more than one Audio Manager in the scene!");
         }
         instance = this;
+
+        eventInstances = new List<EventInstance>();
 
         masterBus = RuntimeManager.GetBus("bus:/");
         musicBus = RuntimeManager.GetBus("bus:/Music");
@@ -67,6 +71,7 @@ public class AudioManager : MonoBehaviour
     public EventInstance CreateEventInstance(EventReference eventReference)
     {
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
+        eventInstances.Add(eventInstance);
         return eventInstance;
     }
 
@@ -74,5 +79,20 @@ public class AudioManager : MonoBehaviour
     {
         ambienceEventInstance = CreateEventInstance(ambienceEventReference);
         ambienceEventInstance.start();
+    }
+
+    private void CleanUp()
+    {
+        // stop and release any created instances
+        foreach(EventInstance eventInstance in eventInstances)
+        {
+            eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            eventInstance.release();
+        }
+    }
+
+    private void OnDestroy()
+    {
+        CleanUp();
     }
 }
