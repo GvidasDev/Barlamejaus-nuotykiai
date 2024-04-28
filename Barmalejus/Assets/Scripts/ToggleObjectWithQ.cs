@@ -1,8 +1,10 @@
+using System.Collections;
 using UnityEngine;
 
 public class ToggleObjectWithQ : MonoBehaviour
 {
     [SerializeField] GameObject toggleRiddleUI;
+    [SerializeField] private float dissapearDelayTime = 0.1f;
 
     private void OnEnable()
     {
@@ -15,9 +17,9 @@ public class ToggleObjectWithQ : MonoBehaviour
         GameEventsManager.instance.inputEvents.onShowRiddleUIPressed -= ShowRiddleUIPressed;
         GameEventsManager.instance.inputEvents.onHideRiddleUIPressed -= HideRiddleUIPressed;
     }
-    private void Start()
+    private void Awake()
     {
-        toggleRiddleUI.SetActive(false);
+        StartCoroutine(ActivateDeactivateRiddleUI());
     }
     private void ShowRiddleUIPressed()
     {
@@ -26,6 +28,12 @@ public class ToggleObjectWithQ : MonoBehaviour
 
     private void HideRiddleUIPressed()
     {
+        toggleRiddleUI.SetActive(false);
+    }
+    private IEnumerator ActivateDeactivateRiddleUI()
+    {
+        toggleRiddleUI.SetActive(true);
+        yield return new WaitForSeconds(dissapearDelayTime);
         toggleRiddleUI.SetActive(false);
     }
 }
