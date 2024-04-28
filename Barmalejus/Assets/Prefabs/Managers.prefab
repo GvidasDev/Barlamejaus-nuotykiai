@@ -45,6 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadQuestState: 0
+  uiText: {fileID: 0}
+  duration: 4
+  currentLerpTime: 0
 --- !u!1 &401012229
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +321,6 @@ MonoBehaviour:
   musicVolume: 1
   ambienceVolume: 1
   sfxVolume: 1
-  playAmbientMusic: 0
 --- !u!1 &8419392449120916380
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +356,7 @@ Transform:
   - {fileID: 117533295}
   - {fileID: 1376647289}
   - {fileID: 1806557781}
+  - {fileID: 8740306308489823347}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -436,10 +439,76 @@ MonoBehaviour:
       Data3: 1299440814
       Data4: 831705515
     Path: event:/SFX/QuestCompleted
-  <ambientMusic>k__BackingField:
+  <menuSelection>k__BackingField:
     Guid:
-      Data1: 1365038370
-      Data2: 1188997730
-      Data3: 1634340245
-      Data4: -903280311
-    Path: event:/Music/ambience_IslandMusic
+      Data1: -241459231
+      Data2: 1215841153
+      Data3: -795330927
+      Data4: 67312974
+    Path: event:/UI/MenuSelection
+--- !u!1001 &1812592093
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8419392449120916381}
+    m_Modifications:
+    - target: {fileID: 8740306310033945000, guid: 4841bb40cf75916448c3577c833c703d, type: 3}
+      propertyPath: m_Name
+      value: UIManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740306310033945006, guid: 4841bb40cf75916448c3577c833c703d, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740306310033945006, guid: 4841bb40cf75916448c3577c833c703d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9529684
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740306310033945006, guid: 4841bb40cf75916448c3577c833c703d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -17.469946
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740306310033945006, guid: 4841bb40cf75916448c3577c833c703d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -32.550762
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740306310033945006, guid: 4841bb40cf75916448c3577c833c703d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740306310033945006, guid: 4841bb40cf75916448c3577c833c703d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740306310033945006, guid: 4841bb40cf75916448c3577c833c703d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740306310033945006, guid: 4841bb40cf75916448c3577c833c703d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740306310033945006, guid: 4841bb40cf75916448c3577c833c703d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740306310033945006, guid: 4841bb40cf75916448c3577c833c703d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740306310033945006, guid: 4841bb40cf75916448c3577c833c703d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740306310033945007, guid: 4841bb40cf75916448c3577c833c703d, type: 3}
+      propertyPath: toggleRiddleUI
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4841bb40cf75916448c3577c833c703d, type: 3}
+--- !u!4 &8740306308489823347 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8740306310033945006, guid: 4841bb40cf75916448c3577c833c703d, type: 3}
+  m_PrefabInstance: {fileID: 1812592093}
+  m_PrefabAsset: {fileID: 0}

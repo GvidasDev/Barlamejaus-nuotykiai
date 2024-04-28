@@ -1,11 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
     [Header("Config")]
     [SerializeField] private bool loadQuestState = true;
+
+    // "New quest UI"
+    [Header("UI")]
+    [SerializeField] private GameObject uiText;
+    private TextMeshProUGUI uiTextComponent;
+    [SerializeField] private float duration = 2f;
+    [SerializeField] private float currentLerpTime = 0f;
+    private float initialAlpha;
+    private float finalAlpha = 0f;
+    private bool shouldChange = false;
+
 
     private Dictionary<string, Quest> questMap;
 
@@ -16,7 +28,28 @@ public class QuestManager : MonoBehaviour
     private void Awake()
     {
         questMap = CreateQuestMap();
+        
 
+    }
+
+    private void DarkenText()
+    {
+        if(currentLerpTime < duration)
+        {
+            currentLerpTime += Time.deltaTime;
+            if(currentLerpTime > duration)
+            {
+                currentLerpTime = duration;
+                uiText.SetActive(false);
+            }
+            float t = currentLerpTime / duration;
+            
+            Color color = uiTextComponent.color;
+            color.a = Mathf.Lerp(initialAlpha, finalAlpha, t);
+            Debug.Log(color.a);
+            uiTextComponent.color = color;
+        }
+        
     }
 
     private void OnEnable()
@@ -53,6 +86,14 @@ public class QuestManager : MonoBehaviour
             // broadcast the initial state of all quests on startup
             GameEventsManager.instance.questEvents.QuestStateChange(quest);
         }
+
+
+        //"New Quest UI"
+        uiTextComponent = uiText.GetComponent<TextMeshProUGUI>();
+        Color color = uiTextComponent.color;
+        initialAlpha = color.a;
+        Debug.Log("Initial alpha: " + initialAlpha);
+        uiText.SetActive(false);
     }
 
     private void ChangeQuestState(string id, QuestState state)
@@ -100,6 +141,13 @@ public class QuestManager : MonoBehaviour
                 ChangeQuestState(quest.info.id, QuestState.CAN_START);
             }
         }
+
+        if(shouldChange)
+        {
+            uiText.SetActive(true);
+            DarkenText();
+        }
+        
     }
 
     private void StartQuest(string id)
@@ -107,8 +155,12 @@ public class QuestManager : MonoBehaviour
         Quest quest = GetQuestById(id);
         quest.InstantiateCurrentQuestStep(this.transform);
         ChangeQuestState(quest.info.id, QuestState.IN_PROGRESS);
-
+        
+        // Quest start audio
         AudioManager.instance.PlayOneShot(FMODEvents.instance.newQuest,this.transform.position);
+
+        // "New Quest" UI
+        shouldChange = true;
     }
 
     private void AdvanceQuest(string id)

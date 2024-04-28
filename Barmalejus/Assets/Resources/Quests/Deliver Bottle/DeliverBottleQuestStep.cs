@@ -1,14 +1,20 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider))]
 public class DeliverBottleQuestStep : QuestStep
 {
+    private GameObject textMeshPro;
+    private TextMeshProUGUI text;
     private void Start()
     {
+        textMeshPro = GameObject.Find("QuestSteps");
+        text = textMeshPro.GetComponent<TextMeshProUGUI>();
         string status = "Deliver the bottle to the boat!";
+        text.text = status;
         ChangeState("");
         Debug.Log(status);
     }
