@@ -25,6 +25,10 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference questCompleted { get; private set; }
 
 
+    [field: Header("Menu Selection")]
+    [field: SerializeField] public EventReference menuSelection { get; private set; }
+
+
     public static FMODEvents instance { get; private set; }
 
     private void Awake()
