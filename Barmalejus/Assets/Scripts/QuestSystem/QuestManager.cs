@@ -8,15 +8,20 @@ public class QuestManager : MonoBehaviour
     [Header("Config")]
     [SerializeField] private bool loadQuestState = true;
 
-    // "New quest UI"
+    // "New quest" and "Quest Finished" UI prompt
     [Header("UI")]
-    [SerializeField] private GameObject uiText;
-    private TextMeshProUGUI uiTextComponent;
+    [SerializeField] private GameObject questPromptUI;
+    private TextMeshProUGUI questPromptText;
     [SerializeField] private float duration = 2f;
     [SerializeField] private float currentLerpTime = 0f;
+    private Color colorQuestPrompt;
     private float initialAlpha;
     private float finalAlpha = 0f;
     private bool shouldChange = false;
+
+    // "Quest steps" UI
+    [SerializeField] private GameObject questStepsUI;
+    private TextMeshProUGUI questStepsText;
 
 
     private Dictionary<string, Quest> questMap;
@@ -28,8 +33,6 @@ public class QuestManager : MonoBehaviour
     private void Awake()
     {
         questMap = CreateQuestMap();
-        
-
     }
 
     private void DarkenText()
@@ -40,15 +43,16 @@ public class QuestManager : MonoBehaviour
             if(currentLerpTime > duration)
             {
                 currentLerpTime = duration;
-                uiText.SetActive(false);
+                shouldChange = false;
             }
             float t = currentLerpTime / duration;
             
-            Color color = uiTextComponent.color;
-            color.a = Mathf.Lerp(initialAlpha, finalAlpha, t);
-            Debug.Log(color.a);
-            uiTextComponent.color = color;
+            colorQuestPrompt = questPromptText.color;
+            colorQuestPrompt.a = Mathf.Lerp(initialAlpha, finalAlpha, t);
+            Debug.Log(colorQuestPrompt.a);
+            questPromptText.color = colorQuestPrompt;
         }
+        
         
     }
 
@@ -89,11 +93,15 @@ public class QuestManager : MonoBehaviour
 
 
         //"New Quest UI"
-        uiTextComponent = uiText.GetComponent<TextMeshProUGUI>();
-        Color color = uiTextComponent.color;
-        initialAlpha = color.a;
+        questPromptText = questPromptUI.GetComponent<TextMeshProUGUI>();
+        colorQuestPrompt = questPromptText.color;
+        initialAlpha = colorQuestPrompt.a;
         Debug.Log("Initial alpha: " + initialAlpha);
-        uiText.SetActive(false);
+        questPromptUI.SetActive(false);
+
+        // "Quest steps" UI
+        questStepsText = questStepsUI.GetComponent<TextMeshProUGUI>();
+
     }
 
     private void ChangeQuestState(string id, QuestState state)
@@ -144,8 +152,16 @@ public class QuestManager : MonoBehaviour
 
         if(shouldChange)
         {
-            uiText.SetActive(true);
+            questPromptUI.SetActive(true);
             DarkenText();
+        }
+        else
+        {
+            questPromptUI.SetActive(false);
+            colorQuestPrompt.a = 1f;
+            initialAlpha = colorQuestPrompt.a;
+            questPromptText.color = colorQuestPrompt;
+            currentLerpTime = 0f;
         }
         
     }
@@ -161,6 +177,8 @@ public class QuestManager : MonoBehaviour
 
         // "New Quest" UI
         shouldChange = true;
+        questPromptText.text = "New Quest Started";
+
     }
 
     private void AdvanceQuest(string id)
@@ -187,6 +205,13 @@ public class QuestManager : MonoBehaviour
         Quest quest = GetQuestById(id);
         ClaimReward(quest);
         ChangeQuestState(quest.info.id,QuestState.FINISHED);
+
+        // "Quest Completed" prompt
+        shouldChange = true;
+        questPromptText.text = "Quest Completed!";
+
+        // Make "Quest steps" UI text empty
+        questStepsText.text = string.Empty;
     }
     private void ClaimReward(Quest quest)
     {

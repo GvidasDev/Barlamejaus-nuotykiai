@@ -23,9 +23,11 @@ public class DeliverBottleQuestStep : QuestStep
         if(other.CompareTag("Bottle"))
         {
             string status = "Bottle has been delivered to the boat. Return to green check mark";
+            text.text = status;
             Debug.Log(status);
             ChangeState("");
             FinishQuestStep();
+            
         }
     }
 

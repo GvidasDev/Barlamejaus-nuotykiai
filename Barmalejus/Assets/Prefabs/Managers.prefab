@@ -45,9 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadQuestState: 0
-  uiText: {fileID: 0}
+  questPromptUI: {fileID: 0}
   duration: 4
   currentLerpTime: 0
+  questStepsUI: {fileID: 0}
 --- !u!1 &401012229
 GameObject:
   m_ObjectHideFlags: 0
