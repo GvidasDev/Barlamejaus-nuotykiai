@@ -12,6 +12,7 @@ public class QuestPoint : MonoBehaviour
     [SerializeField] private bool startPoint = true;
     [SerializeField] private bool finishPoint = true;
 
+    [SerializeField] private GameObject uiText;
 
     private bool playerIsNear = false;
     private string questId;
@@ -20,6 +21,7 @@ public class QuestPoint : MonoBehaviour
     private void Awake()
     {
         questId = questInfoForPoint.id;
+        uiText.SetActive(false);
     }
 
     private void OnEnable()
@@ -65,6 +67,7 @@ public class QuestPoint : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             playerIsNear = true;
+            uiText.SetActive(true);
         }
     }
 
@@ -73,6 +76,7 @@ public class QuestPoint : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsNear = false;
+            uiText.SetActive(false);
         }
     }
 

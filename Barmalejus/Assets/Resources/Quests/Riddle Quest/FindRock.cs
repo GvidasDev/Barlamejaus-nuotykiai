@@ -1,14 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(BoxCollider))]
 public class FindRock : QuestStep
 {
+    [SerializeField] private int id;
+
     private void Start()
     {
         string status = "If hidden plunder be your aim, beneath the rock formation on North East beach ye journey begins";
-        Debug.Log(status);
+
+        GameEventsManager.instance.riddleUIEvents.RiddleProgress(id, status);
+
     }
 
     private void OnTriggerEnter(Collider other)

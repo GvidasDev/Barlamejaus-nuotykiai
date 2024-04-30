@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.2
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1878156, g: 0.30168453, b: 0.3789559, a: 0.2}
+  m_IndirectSpecularColor: {r: 0.18832898, g: 0.30181935, b: 0.37897503, a: 0.2}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1105,6 +1105,7 @@ MonoBehaviour:
   questInfoForPoint: {fileID: 11400000, guid: 1802acf494faccb41b59a0cfe1d6d261, type: 2}
   startPoint: 1
   finishPoint: 1
+  uiText: {fileID: 1500346130}
 --- !u!135 &885374001
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1118,6 +1119,11 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.46643943
   m_Center: {x: 0, y: -0.5335606, z: 0}
+--- !u!1 &909041991 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 909041991, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
+  m_PrefabInstance: {fileID: 2230010126819477510}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &960105134 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3729239870891311785, guid: d5f8b901a10f13642b87a142a55592ce, type: 3}
@@ -1608,6 +1614,7 @@ MonoBehaviour:
   questInfoForPoint: {fileID: 11400000, guid: 34c1d16585f44f34fa6ea5ac08b609f5, type: 2}
   startPoint: 1
   finishPoint: 0
+  uiText: {fileID: 1500346130}
 --- !u!135 &1327169399
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1845,6 +1852,11 @@ PrefabInstance:
       objectReference: {fileID: 3134392423972658669}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d795daf439c95ca4aa7add829b9cd105, type: 3}
+--- !u!1 &1500346130 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9090315295803788139, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
+  m_PrefabInstance: {fileID: 2230010126819477510}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1503380858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1878,6 +1890,7 @@ MonoBehaviour:
   questInfoForPoint: {fileID: 11400000, guid: 34c1d16585f44f34fa6ea5ac08b609f5, type: 2}
   startPoint: 0
   finishPoint: 1
+  uiText: {fileID: 1500346130}
 --- !u!135 &1503380860
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2333,6 +2346,7 @@ MonoBehaviour:
   questInfoForPoint: {fileID: 11400000, guid: 3d06afb33194ca043a7ea916d831c1eb, type: 2}
   startPoint: 1
   finishPoint: 1
+  uiText: {fileID: 1500346130}
 --- !u!135 &1698089876
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2731,6 +2745,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
+--- !u!1 &2230010126819477511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 118228749, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
+  m_PrefabInstance: {fileID: 2230010126819477510}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3134392423972658669 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6892804990907805013, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
@@ -3186,14 +3205,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 117533296, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: questStepsUI
+      value: 
+      objectReference: {fileID: 909041991}
+    - target: {fileID: 117533296, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: questPromptUI
+      value: 
+      objectReference: {fileID: 2230010126819477511}
     - target: {fileID: 6892804990907805013, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
       propertyPath: crosshairObject
       value: 
       objectReference: {fileID: 1391905894}
-    - target: {fileID: 8419392448683978542, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
-      propertyPath: playAmbientMusic
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8419392449120916380, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
       propertyPath: m_Name
       value: Managers

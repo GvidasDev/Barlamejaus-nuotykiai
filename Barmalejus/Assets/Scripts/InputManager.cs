@@ -11,6 +11,8 @@ public class InputManager : MonoBehaviour
         {
             GameEventsManager.instance.inputEvents.SubmitPressed();
         }
+
+
         if(Input.GetKey(KeyCode.G))
         {
             GameEventsManager.instance.inputEvents.ShowCompassPressed();
@@ -18,6 +20,16 @@ public class InputManager : MonoBehaviour
         if(Input.GetKeyUp(KeyCode.G))
         {
             GameEventsManager.instance.inputEvents.HideCompassPressed();
+        }
+
+
+        if (Input.GetKey(KeyCode.Q))
+        {
+            GameEventsManager.instance.inputEvents.ShowRiddleUIPressed();
+        }
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            GameEventsManager.instance.inputEvents.HideRiddleUIPressed();
         }
     }
 }

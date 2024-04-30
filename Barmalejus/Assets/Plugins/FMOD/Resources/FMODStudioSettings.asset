@@ -26,8 +26,8 @@ MonoBehaviour:
       Value: 1
       HasValue: 1
     OverlayPosition:
-      Value: 0
-      HasValue: 0
+      Value: 2
+      HasValue: 1
     OverlayFontSize:
       Value: 0
       HasValue: 0
@@ -554,6 +554,7 @@ MonoBehaviour:
   - IslandAmbience
   - ItemPickup
   - SFX
+  - UI
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
