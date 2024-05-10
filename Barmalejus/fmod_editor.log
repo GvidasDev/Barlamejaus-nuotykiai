@@ -10,7 +10,7 @@
 [LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002199161BD18 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001FC7F201C08 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -24,24 +24,101 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 1920
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 1536
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005414AAF438
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAC9E73F60
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAC9E73F20
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAC9E74040
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAC9E74100
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000218E17BFB28
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='menu_Selection', format=5, channels=2, frequency=48000, lengthbytes=1792, lengthpcm=6912, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.463043.
-[LOG] SoundI::release                          :  (00000219DB536B48)
-[LOG] SoundI::release                          :     menu_Selection (000002190DA24B28)
+[LOG] SystemI::createSound                     : filename = ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/IslandAmbience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001FD4CD085B8, queue head = 000001FD4CE4F358, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FD4CD085B8
+[LOG] SystemI::createSound                     : filename = ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/IslandAmbience.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/IslandAmbience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 53634144
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FD4CD09188, queue head = 000001FD4CE4F358, queue count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6112
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FD77A33010
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 4500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='island_ambience_birds', format=5, channels=2, frequency=48000, lengthbytes=8156480, lengthpcm=28272431, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.497345.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FD4CD085B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FD4CD09188
+[LOG] SystemI::createSoundInternal             :     Create name='../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/IslandAmbience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 53634144
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6112
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FD77A33150
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='music_SoT_AncientIsles', format=5, channels=2, frequency=48000, lengthbytes=2459168, lengthpcm=11563258, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.945831.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FD4CD09188
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001FD4CD06908, queue head = 000001FD4CE4F358, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FD4CD06908
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001FD4CD06AB8, queue head = 000001FD4CE4F358, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FD4CD06908
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FD4CD06AB8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FD4CD06AB8
+[LOG] SystemI::createSound                     : filename = ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/IslandAmbience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001FD7763A598, queue head = 000001FD4CE4F358, queue count = 0
+[LOG] SystemI::createSound                     : filename = ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/IslandAmbience.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FD7763A598
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/IslandAmbience.bank', mode=0x02010082
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FD7763A3E8, queue head = 000001FD4CE4F358, queue count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 53634144
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6112
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FD77A33510
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 4500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='island_ambience_birds', format=5, channels=2, frequency=48000, lengthbytes=8156480, lengthpcm=28272431, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.497345.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FD7763A598
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FD7763A3E8
+[LOG] SystemI::createSoundInternal             :     Create name='../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/IslandAmbience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 53634144
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 6112
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FD77A32890
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='music_SoT_AncientIsles', format=5, channels=2, frequency=48000, lengthbytes=2459168, lengthpcm=11563258, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.945831.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FD7763A3E8
+[LOG] SoundI::release                          : music_SoT_AncientIsles (000001FD4CD09188)
+[LOG] SoundI::release                          :     music_SoT_AncientIsles (000001FA56804A38)
+[LOG] SoundI::release                          :     music_SoT_AncientIsles (000001FD4CD06AB8)
+[LOG] SoundI::release                          : island_ambience_birds (000001FD4CD085B8)
+[LOG] SoundI::release                          :     island_ambience_birds (000001FA567FFA98)
+[LOG] SoundI::release                          :     island_ambience_birds (000001FD4CD06908)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001FD7763A748, queue head = 000001FD4CE4F358, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FD7763A748
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001FD776399C8, queue head = 000001FD4CE4F358, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FD7763A748
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FD776399C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FD776399C8
+[LOG] SoundI::release                          : music_SoT_AncientIsles (000001FD7763A3E8)
+[LOG] SoundI::release                          :     music_SoT_AncientIsles (000001FA56803378)
+[LOG] SoundI::release                          :     music_SoT_AncientIsles (000001FD776399C8)
+[LOG] SoundI::release                          : island_ambience_birds (000001FD7763A598)
+[LOG] SoundI::release                          :     island_ambience_birds (000001FA568005F8)
+[LOG] SoundI::release                          :     island_ambience_birds (000001FD7763A748)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -49,3 +126,5 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.

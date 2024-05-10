@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.25
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.21164757, g: 0.33633548, b: 0.42123225, a: 0.25}
+  m_IndirectSpecularColor: {r: 0.21153444, g: 0.33627412, b: 0.42116234, a: 0.25}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2454,6 +2454,14 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 850879594}
+    - target: {fileID: 53491604913001572, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 53491605062788548, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2230010126561798778, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2541,6 +2549,30 @@ PrefabInstance:
     - target: {fileID: 2230010126561798782, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230010127227261943, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230010127607538263, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079430532524006565, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079430532607012101, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764986549291346681, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764986549648743257, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
@@ -2807,6 +2839,14 @@ PrefabInstance:
     - target: {fileID: 1211161197751515765, guid: d795daf439c95ca4aa7add829b9cd105, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211161197751518600, guid: d795daf439c95ca4aa7add829b9cd105, type: 3}
+      propertyPath: sprintSPeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211161197751518600, guid: d795daf439c95ca4aa7add829b9cd105, type: 3}
+      propertyPath: sprintSpeed
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1211161197751518601, guid: d795daf439c95ca4aa7add829b9cd105, type: 3}
       propertyPath: m_RootOrder
