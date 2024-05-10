@@ -11,6 +11,7 @@ public class FindRock : QuestStep
 
     private void Start()
     {
+        GameEventsManager.instance.inputEvents.canOpenRiddlePaper = true;
         string status = "If hidden plunder be your aim, beneath the rock formation on North East beach ye journey begins";
 
         GameEventsManager.instance.riddleUIEvents.RiddleProgress(id, status);

@@ -3,36 +3,40 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+
 [RequireComponent(typeof(BoxCollider))]
-public class FindAndDeliverPart : QuestStep
+public class PickupMessage : QuestStep
 {
-    [SerializeField] private int id;
+    private bool playerInRange = false;
 
     private GameObject textMeshPro;
     private TextMeshProUGUI text;
 
-    private void Start()
+    void Start()
     {
-        string status = "The treasure is close, but you're not done, head 5 paces West, grab it and run";
+        string status = "Approach the bottle!";
         textMeshPro = GameObject.Find("QuestSteps");
         text = textMeshPro.GetComponent<TextMeshProUGUI>();
-        
+        text.text = status;
         ChangeState("");
-        GameEventsManager.instance.riddleUIEvents.RiddleProgress(id,status);
     }
-
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag.Equals("Radiator"))
+        if (other.tag.Equals("Player"))
         {
-            string status = "Radiator has been delivered to the boat. Return to the yellow marker!";
-            text.text = status;
-            Debug.Log(status);
-            ChangeState("");
-            GameEventsManager.instance.inputEvents.canOpenRiddlePaper = false;
+            //playerInRange = true;
             FinishQuestStep();
+            text.text = "Open riddle paper with Q";
+            //SubmitPressed();
         }
     }
+/*    private void SubmitPressed()
+    {
+        if (playerInRange)
+        {
+            FinishQuestStep();
+        }
+    }*/
 
     protected void UpdateState()
     {
