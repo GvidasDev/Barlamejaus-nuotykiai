@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 
 public class InputEvents
 {
+    public bool canOpenRiddlePaper = false;
 
     public event Action onSubmitPressed;
 
@@ -50,7 +51,7 @@ public class InputEvents
     public event Action onShowRiddleUIPressed;
     public void ShowRiddleUIPressed()
     {
-        if(onShowRiddleUIPressed != null)
+        if(onShowRiddleUIPressed != null && canOpenRiddlePaper)
         {
             onShowRiddleUIPressed();
         }
@@ -59,7 +60,7 @@ public class InputEvents
     public event Action onHideRiddleUIPressed;
     public void HideRiddleUIPressed()
     {
-        if (onHideRiddleUIPressed != null)
+        if (onHideRiddleUIPressed != null && canOpenRiddlePaper)
         {
             onHideRiddleUIPressed();
         }

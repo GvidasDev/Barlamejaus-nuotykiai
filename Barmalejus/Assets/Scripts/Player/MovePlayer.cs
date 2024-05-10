@@ -13,6 +13,7 @@ public class MovePlayer : MonoBehaviour
     [SerializeField] float speed = 15f;
     [SerializeField] float gravity = -9.81f;
     [SerializeField] float jumpHeight = 3f;
+    [SerializeField] float sprintSpeed = 0.5f;
 
     //audio
     private EventInstance playerFootsteps;
@@ -66,7 +67,7 @@ public class MovePlayer : MonoBehaviour
         }
         if(Input.GetKey(KeyCode.LeftShift))
         {
-            controller.Move(move * (speed + 0.5f) * Time.deltaTime);
+            controller.Move(move * (speed + sprintSpeed) * Time.deltaTime);
         }
 
         velocity.y += gravity * Time.deltaTime;
