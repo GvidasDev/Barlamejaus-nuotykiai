@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d91e6bd2b11e474b947af94c468f759, type: 3}
+  m_Name: RiddleQuest
+  m_EditorClassIdentifier: 
+  <id>k__BackingField: RiddleQuest
+  displayName: Solve the Riddle
+  levelRequirement: 1
+  questPrerequisites: []
+  questStepPrefabs:
+  - {fileID: 1526047706843741444, guid: 15cb92f6cfdfba64fbc76442518caf53, type: 3}
+  - {fileID: 4230039105908154761, guid: 7a320899f4054da45b8ad3959dfbfccd, type: 3}
+  - {fileID: 1448787251665260835, guid: 8ebcb93c90869b742a2acf45b5c58940, type: 3}
+  - {fileID: 8073177722538439686, guid: 8ee80752d2654f44b82d8b832783c6b1, type: 3}
+  experienceLevel: 100
