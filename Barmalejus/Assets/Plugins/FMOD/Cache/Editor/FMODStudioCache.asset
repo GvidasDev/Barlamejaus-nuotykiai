@@ -171,7 +171,7 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638499253269089609
+  lastModified: 638510681904006785
   FileSizes:
   - Name: Desktop
     Value: 1486
@@ -204,13 +204,41 @@ MonoBehaviour:
   - {fileID: -7222737948252606294}
   - {fileID: 1428816795627338221}
   - {fileID: 3029410355877468294}
+  - {fileID: 823707693702456191}
   EditorParameters: []
   MasterBanks:
   - {fileID: -270316295626774535}
   StringsBanks:
   - {fileID: 3039528233246538727}
-  cacheTime: 638499253269600339
+  cacheTime: 638510687693925967
   cacheVersion: 131617
+--- !u!114 &823707693702456191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ChestOpen
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ChestOpen
+  Guid:
+    Data1: 145659726
+    Data2: 1238273061
+    Data3: -503348823
+    Data4: -1421446977
+  Banks:
+  - {fileID: 6527423720608562612}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2900
 --- !u!114 &1428816795627338221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,10 +354,10 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638499253269110040
+  lastModified: 638510681904017030
   FileSizes:
   - Name: Desktop
-    Value: 1450
+    Value: 1490
   Exists: 1
 --- !u!114 &6031340366775048136
 MonoBehaviour:
@@ -373,10 +401,10 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638495461898649993
+  lastModified: 638510687693925967
   FileSizes:
   - Name: Desktop
-    Value: 132864
+    Value: 195808
   Exists: 1
 --- !u!114 &7917210002290429195
 MonoBehaviour:
