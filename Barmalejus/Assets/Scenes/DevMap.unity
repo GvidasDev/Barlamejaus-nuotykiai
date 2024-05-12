@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.2
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18846467, g: 0.30186504, b: 0.3789812, a: 0.2}
+  m_IndirectSpecularColor: {r: 0.1878092, g: 0.30149508, b: 0.37885025, a: 0.2}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -590,6 +590,7 @@ MonoBehaviour:
   chestDigUp: {fileID: 4314148134072834697}
   chestOpen: {fileID: 477325065}
   interactionPrompt: {fileID: 1796731273}
+  treasure: {fileID: 5904995097459820778, guid: 2064322a12ca9f24ab0aa03170249b36, type: 3}
 --- !u!65 &320372350
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2996,13 +2997,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 15486685708168842, guid: 641529c0277c65341a9d60de53286934, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1829529166042459537, guid: 641529c0277c65341a9d60de53286934, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745028505804854818, guid: 641529c0277c65341a9d60de53286934, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137921739346606608, guid: 641529c0277c65341a9d60de53286934, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192088672257006141, guid: 641529c0277c65341a9d60de53286934, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472400270207291389, guid: 641529c0277c65341a9d60de53286934, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8537031148394562347, guid: 641529c0277c65341a9d60de53286934, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8537031148394562347, guid: 641529c0277c65341a9d60de53286934, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.6652787
+      value: -0.41527867
       objectReference: {fileID: 0}
     - target: {fileID: 8537031148394562347, guid: 641529c0277c65341a9d60de53286934, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3010,7 +3035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8537031148394562347, guid: 641529c0277c65341a9d60de53286934, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.9331997
+      value: -0.9331994
       objectReference: {fileID: 0}
     - target: {fileID: 8537031148394562347, guid: 641529c0277c65341a9d60de53286934, type: 3}
       propertyPath: m_LocalRotation.w

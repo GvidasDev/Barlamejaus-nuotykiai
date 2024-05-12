@@ -7,6 +7,7 @@ public class ChestDigUpAnimation : MonoBehaviour
     [SerializeField] private Animator chestDigUp;
     [SerializeField] private Animator chestOpen;
     [SerializeField] private GameObject interactionPrompt;
+    [SerializeField] private GameObject treasure;
 
     private bool isPlayerNear = false;
 
@@ -45,6 +46,7 @@ public class ChestDigUpAnimation : MonoBehaviour
             AudioManager.instance.PlayOneShot(FMODEvents.instance.chestOpen, this.transform.position);
             interactionPrompt.SetActive(false);
             Destroy(this.gameObject);
+            Instantiate(treasure);
         }
     }
 }
