@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.25
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.21160108, g: 0.33637425, b: 0.421183, a: 0.25}
+  m_IndirectSpecularColor: {r: 0.21160913, g: 0.33648393, b: 0.42125607, a: 0.25}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1852,7 +1852,7 @@ PrefabInstance:
       objectReference: {fileID: 118228749}
     - target: {fileID: 117533296, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
       propertyPath: loadQuestState
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6892804990907805013, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
       propertyPath: crosshairObject
