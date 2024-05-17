@@ -11,6 +11,7 @@ public class PickupMessage : QuestStep
 
     private GameObject textMeshPro;
     private TextMeshProUGUI text;
+    private GameObject bottle;
 
     void Start()
     {
@@ -19,6 +20,8 @@ public class PickupMessage : QuestStep
         text = textMeshPro.GetComponent<TextMeshProUGUI>();
         text.text = status;
         ChangeState("");
+
+        bottle = GameObject.Find("bottle");
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -26,6 +29,7 @@ public class PickupMessage : QuestStep
         {
             //playerInRange = true;
             FinishQuestStep();
+            Destroy(bottle);
             text.text = "Open riddle paper with Q";
             //SubmitPressed();
         }
