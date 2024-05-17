@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.419591, g: 0.6420405, b: 0.79334223, a: 1}
+  m_IndirectSpecularColor: {r: 0.42003173, g: 0.6423911, b: 0.7935434, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11159,6 +11159,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &420379287 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8419392449120916381, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+  m_PrefabInstance: {fileID: 1086165685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &436706071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18607,6 +18612,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <ambience>k__BackingField.Path
+      value: event:/Music/music_OpeningScene_Shanty
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <ambience>k__BackingField.Guid.Data1
+      value: -184904976
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <ambience>k__BackingField.Guid.Data2
+      value: 1148783858
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <ambience>k__BackingField.Guid.Data3
+      value: -264290164
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <ambience>k__BackingField.Guid.Data4
+      value: -1952656688
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <introThunderstorm>k__BackingField.Path
+      value: event:/SFX/IntroThunderstorm
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <introThunderstorm>k__BackingField.Guid.Data1
+      value: 1294049834
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <introThunderstorm>k__BackingField.Guid.Data2
+      value: 1197318783
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <introThunderstorm>k__BackingField.Guid.Data3
+      value: 1063641500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419392449686149865, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
+      propertyPath: <introThunderstorm>k__BackingField.Guid.Data4
+      value: -1849430760
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 951afc3814ec4a146bbbab508b0d9f43, type: 3}
 --- !u!1001 &1115053675
@@ -19611,7 +19656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1299813188
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -23453,7 +23498,8 @@ ParticleSystem:
     exit: 0
     colliderQueryMode: 0
     radiusScale: 1
-    primitives: []
+    primitives:
+    - {fileID: 0}
   SubModule:
     serializedVersion: 2
     enabled: 0
@@ -24993,6 +25039,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 58a5ca6f1233886498ef18c2f58c708f, type: 3}
   m_PrefabInstance: {fileID: 1359612732}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1394175771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1394175772}
+  - component: {fileID: 1394175773}
+  m_Layer: 0
+  m_Name: LightningStrikeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1394175772
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394175771}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 420379287}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1394175773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394175771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a67e0e5dba37b45b4f26640a1079dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning: {fileID: 1299813187}
 --- !u!1 &1420740191
 GameObject:
   m_ObjectHideFlags: 0

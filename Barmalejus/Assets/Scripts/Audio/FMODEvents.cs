@@ -33,6 +33,14 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference chestOpen { get; private set; }
 
 
+    [field: Header("Intro Thunderstorm Ambience")]
+    [field: SerializeField] public EventReference introThunderstorm { get; private set; }
+
+
+    [field: Header("Outro Synthwave")]
+    [field: SerializeField] public EventReference outroMusic { get; private set; }
+
+
     public static FMODEvents instance { get; private set; }
 
     private void Awake()

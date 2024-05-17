@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4199672, g: 0.6422642, b: 0.7934979, a: 1}
+  m_IndirectSpecularColor: {r: 0.42004353, g: 0.64254504, b: 0.79359186, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1878,11 +1878,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ambience>k__BackingField:
     Guid:
-      Data1: 1152816779
-      Data2: 1339689487
-      Data3: -1309139808
-      Data4: 1775430555
-    Path: event:/Ambience/Birds
+      Data1: 161494627
+      Data2: 1235397054
+      Data3: -1925311073
+      Data4: -1796989176
+    Path: event:/Music/mainMenu_Music
   <playerFootsteps>k__BackingField:
     Guid:
       Data1: 409693513
