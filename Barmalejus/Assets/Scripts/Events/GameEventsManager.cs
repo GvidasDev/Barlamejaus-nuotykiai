@@ -10,6 +10,7 @@ public class GameEventsManager : MonoBehaviour
     public InputEvents inputEvents;
     public PlayerEvents playerEvents;
     public RiddleUIEvents riddleUIEvents;
+    public DeliveredItemEvents deliveredItemEvents;
 
     private void Awake()
     {
@@ -24,5 +25,6 @@ public class GameEventsManager : MonoBehaviour
         inputEvents = new InputEvents();
         playerEvents = new PlayerEvents();
         riddleUIEvents = new RiddleUIEvents();
+        deliveredItemEvents = new DeliveredItemEvents();
     }
 }
