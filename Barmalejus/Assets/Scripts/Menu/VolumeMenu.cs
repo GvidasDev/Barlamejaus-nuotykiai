@@ -17,7 +17,7 @@ public class VolumeMenu : MonoBehaviour
 
     void Start()
     {
-        menu.gameObject.SetActive(false);
+        //menu.gameObject.SetActive(false);
         movePlayer = FindObjectOfType<MovePlayer>();
         look = FindObjectOfType<Looking>();
     }
