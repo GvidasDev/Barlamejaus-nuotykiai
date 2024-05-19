@@ -723,6 +723,20 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  <lightSwitch>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <seaWaves>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1001 &687972646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1872,6 +1886,7 @@ GameObject:
   - component: {fileID: 1761340614}
   - component: {fileID: 1761340613}
   - component: {fileID: 1761340615}
+  - component: {fileID: 1761340616}
   m_Layer: 5
   m_Name: Thanks
   m_TagString: Untagged
@@ -2016,6 +2031,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1761340616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761340611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a9901a94a081c47ae86e0f22a369d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2143608222
 GameObject:
   m_ObjectHideFlags: 0
