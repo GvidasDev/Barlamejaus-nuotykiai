@@ -3436,7 +3436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9021396379568740753, guid: 641529c0277c65341a9d60de53286934, type: 3}
       propertyPath: m_Name
-      value: barmalejus_chest (1)
+      value: barmalejus_chest
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 641529c0277c65341a9d60de53286934, type: 3}

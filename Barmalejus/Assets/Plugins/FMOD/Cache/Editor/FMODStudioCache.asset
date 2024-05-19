@@ -252,7 +252,7 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638515665773394853
+  lastModified: 638517310328973771
   FileSizes:
   - Name: Desktop
     Value: 1486
@@ -292,12 +292,15 @@ MonoBehaviour:
   - {fileID: -2685876199980708470}
   - {fileID: 2673904514209176922}
   - {fileID: 2109922136013008670}
+  - {fileID: 9018328530509327998}
+  - {fileID: 7603528422707324811}
+  - {fileID: 2159267261453382281}
   EditorParameters: []
   MasterBanks:
   - {fileID: -270316295626774535}
   StringsBanks:
   - {fileID: 3039528233246538727}
-  cacheTime: 638515667289959205
+  cacheTime: 638517337468570076
   cacheVersion: 131617
 --- !u!114 &823707693702456191
 MonoBehaviour:
@@ -400,6 +403,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 49500
+--- !u!114 &2159267261453382281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Ending_SeaWaves
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Ending_SeaWaves
+  Guid:
+    Data1: 286110448
+    Data2: 1215733777
+    Data3: 1411646909
+    Data4: 1309209416
+  Banks:
+  - {fileID: 7917210002290429195}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13600
 --- !u!114 &2673904514209176922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,10 +525,10 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638515665773415233
+  lastModified: 638517310328989012
   FileSizes:
   - Name: Desktop
-    Value: 1814
+    Value: 1952
   Exists: 1
 --- !u!114 &4462301626148340459
 MonoBehaviour:
@@ -569,11 +599,38 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638515646809133667
+  lastModified: 638517317375103010
   FileSizes:
   - Name: Desktop
-    Value: 776672
+    Value: 806592
   Exists: 1
+--- !u!114 &7603528422707324811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/LightSwitch
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/LightSwitch
+  Guid:
+    Data1: -733409925
+    Data2: 1311142825
+    Data3: 2028426385
+    Data4: -277625615
+  Banks:
+  - {fileID: 6527423720608562612}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2040
 --- !u!114 &7917210002290429195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,8 +646,35 @@ MonoBehaviour:
   Path: ../../../../FMOD/Barmalejaus_Nuotykiai/audio-system/Build/Desktop/IslandAmbience.bank
   Name: IslandAmbience
   StudioPath: bank:/IslandAmbience
-  lastModified: 638496546113115595
+  lastModified: 638517337468570076
   FileSizes:
   - Name: Desktop
-    Value: 53640256
+    Value: 54224512
   Exists: 1
+--- !u!114 &9018328530509327998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ChestOpen_Ending
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ChestOpen_Ending
+  Guid:
+    Data1: 537138669
+    Data2: 1147251299
+    Data3: 2039020189
+    Data4: -1074323972
+  Banks:
+  - {fileID: 6527423720608562612}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3600

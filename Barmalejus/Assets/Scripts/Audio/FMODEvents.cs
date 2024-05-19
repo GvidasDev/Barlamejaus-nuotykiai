@@ -41,6 +41,14 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference outroMusic { get; private set; }
 
 
+    [field: Header("Ending Light Switch")]
+    [field: SerializeField] public EventReference lightSwitch { get; private set; }
+
+
+    [field: Header("Ending Sea Waves")]
+    [field: SerializeField] public EventReference seaWaves { get; private set; }
+
+
     public static FMODEvents instance { get; private set; }
 
     private void Awake()
