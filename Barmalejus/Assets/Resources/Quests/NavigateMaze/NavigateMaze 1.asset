@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <id>k__BackingField: NavigateMaze 1
   displayName: Navigate the maze and find spark plug!
-  levelRequirement: 1
-  questPrerequisites: []
+  levelRequirement: 2
+  questPrerequisites:
+  - {fileID: 11400000, guid: 55fc01530ca4a17499007057dcfcb61d, type: 2}
   questStepPrefabs:
   - {fileID: 2319711807020876907, guid: c53f1b85092464c428cdd7cd31aacc0c, type: 3}
   - {fileID: 5116797709983285859, guid: 7a4c48cfaf8279d40b0853a6251d700a, type: 3}
