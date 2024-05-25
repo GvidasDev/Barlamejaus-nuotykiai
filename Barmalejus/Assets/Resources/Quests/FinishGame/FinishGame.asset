@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <id>k__BackingField: FinishGame
   displayName: Leaving the Island
-  levelRequirement: 0
-  questPrerequisites: []
+  levelRequirement: 3
+  questPrerequisites:
+  - {fileID: 11400000, guid: 55fc01530ca4a17499007057dcfcb61d, type: 2}
+  - {fileID: 11400000, guid: 8957043dc19bbef4f856764e36490e6c, type: 2}
   questStepPrefabs:
   - {fileID: 3369009786328981902, guid: 6e9b15b6e16f6194fa19096d796c793a, type: 3}
   experienceLevel: 0

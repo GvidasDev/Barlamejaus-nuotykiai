@@ -17,10 +17,12 @@ public class QuestPoint : MonoBehaviour
     private bool playerIsNear = false;
     private string questId;
     private QuestState currentQuestState;
+    private QuestIcon questIcon;
 
     private void Awake()
     {
         questId = questInfoForPoint.id;
+        questIcon = GetComponentInChildren<QuestIcon>();
         uiText.SetActive(false);
     }
 
@@ -59,6 +61,7 @@ public class QuestPoint : MonoBehaviour
         if(quest.info.id.Equals(questId))
         {
             currentQuestState = quest.state;
+            questIcon.SetState(currentQuestState,startPoint,finishPoint);
         }
     }
 
