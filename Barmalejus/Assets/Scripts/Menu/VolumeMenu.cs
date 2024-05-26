@@ -9,17 +9,15 @@ public class VolumeMenu : MonoBehaviour
     [SerializeField] private GameObject menu;
     [SerializeField] private GameObject firstSelected;
 
-    /*    [Header("Player")]
-        [SerializeField] private MovePlayer movePlayer;*/
 
     private MovePlayer movePlayer;
     private Looking look;
 
     void Start()
     {
-        //menu.gameObject.SetActive(false);
         movePlayer = FindObjectOfType<MovePlayer>();
         look = FindObjectOfType<Looking>();
+        menu.gameObject.SetActive(false);
     }
 
     void Update()

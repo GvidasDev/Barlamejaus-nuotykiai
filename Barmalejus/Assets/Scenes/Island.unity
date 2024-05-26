@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.25
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.2114375, g: 0.33625132, b: 0.42111242, a: 0.25}
+  m_IndirectSpecularColor: {r: 0.21145317, g: 0.33631966, b: 0.421179, a: 0.25}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2207,6 +2207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 3030161242299327451, guid: 3a279ada631ce604f9c77b8285eb4281, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a279ada631ce604f9c77b8285eb4281, type: 3}
 --- !u!1001 &546321046
@@ -3010,11 +3014,15 @@ PrefabInstance:
       objectReference: {fileID: 850879594}
     - target: {fileID: 53491604913001572, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 53491605062788548, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230010126517296923, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2230010126561798778, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
       propertyPath: m_Pivot.x
@@ -3106,27 +3114,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2230010127227261943, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230010127477724701, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230010127607538263, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6079430532524006565, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6079430532607012101, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8764986549291346681, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8764986549648743257, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa38125ca5421004f9f79642cfd70aca, type: 3}
@@ -12198,7 +12210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &9072198849148780808
 CanvasRenderer:
   m_ObjectHideFlags: 0
