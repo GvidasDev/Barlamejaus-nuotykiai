@@ -14,7 +14,7 @@ public class Looking : MonoBehaviour
     [SerializeField] float zoomFov = 30f;
 
     float xRotation = 0f;
-    private bool enableLook;
+    private bool enableLook = true;
     // Start is called before the first frame update
     void Start()
     {
