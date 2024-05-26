@@ -29,15 +29,15 @@ Open your terminal (or Git Bash on Windows) and run the following command to clo
 git clone https://github.com/GvidasDev/Barmalejaus-nuotykiai.git
 ```
 #### Using GitHub Desktop
-1. Open GitHub Desktop
+1. Open GitHub Desktop.
 2. Click on **File** in the menu bar and select **Clone repository**.
 3. In the dialog box, go to the **URL** tab.
 4. Enter the repository URL: https://github.com/GvidasDev/Barmalejaus-nuotykiai.git
 5. Choose the local path where you want to clone the repository.
-6. Click **Clone**
+6. Click **Clone**.
 
 ### 2. Open the Project in Unity
-1. Open Unity Hub
+1. Open Unity Hub.
 2. Click on the **Projects** tab.
 3. Click the **Add** button.
 4. Navigate to the directory where you cloned the repository and select the folder.
