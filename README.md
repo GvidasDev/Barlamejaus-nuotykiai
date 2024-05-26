@@ -1,10 +1,10 @@
 # Barmalėjaus Nuotykiai
 ## A game about exploration
-Barmalėjaus nuotykiai is a video game made by team *Barmalėjaus Nuotykiai*, which focuses on island exploration and riddle solving, immersing the player into the tropical land of treasures. Inspiration is taken from a video game *Sea of Thieves* developed by *Rare*.
+Barmalėjaus nuotykiai is a video game made by team *Barmalejaus Nuotykiai*, which focuses on island exploration and riddle solving, immersing the player into the tropical land of treasures. Inspiration is taken from a video game *Sea of Thieves* developed by *Rare*.
 
 ## Features:
 * Fully explorable uninhabited tropical island
-* Quest system with several quests, allowing users to solve riddles, explore ruins, which in return reward the player with boat engine parts, required to escape the uninhabited island
+* Quest system with several quests, allowing players to solve riddles, explore ruins, which in return reward the player with boat engine parts, required to escape the uninhabited island
 * A story about a pirate and his treasure hunt
 
 ## How to install and run the game
@@ -61,4 +61,25 @@ Unity may prompt you to download required packages or assets. If so, follow the 
 5. Laura Barišauskaitė [()]() on GitHub
 6. Domantas Kelmanas [(Voopieq)](https://github.com/Voopieq) on GitHub
 
+## License
+MIT License
 
+Copyright (c) 2024 Barmalejaus Nuotykiai
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
