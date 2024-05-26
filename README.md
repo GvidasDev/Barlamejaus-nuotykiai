@@ -1,6 +1,6 @@
 # Barmalėjaus Nuotykiai
 ## A game about exploration
-Barmalėjaus nuotykiai is a video game made by team *Barmalejaus Nuotykiai*, which focuses on island exploration and riddle solving, immersing the player into the tropical land of treasures. Inspiration is taken from a video game *Sea of Thieves* developed by *Rare*.
+Barmalėjaus nuotykiai is a video game made by team *Barmalejaus Nuotykiai*, which focuses on island exploration and riddle solving, immersing the player into the tropical land of treasures. Some inspiration is taken from a video game *Sea of Thieves* developed by *Rare*.
 
 ## Features:
 * Fully explorable uninhabited tropical island
