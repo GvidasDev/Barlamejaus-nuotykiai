@@ -58,7 +58,7 @@ Unity may prompt you to download required packages or assets. If so, follow the 
 2. Gvidas Viliušas [(GvidasDev)](https://github.com/GvidasDev) on GitHub
 3. Simona Miežlaiškytė [(SIMs0na)](https://github.com/SIMs0na) on GitHub
 4. Saulius Šniaukšta [(Z0RAS)](https://github.com/Z0RAS) on GitHub
-5. Laura Barišauskaitė [()]() on GitHub
+5. Laura Barišauskaitė [(laubari)](https://github.com/laubari) on GitHub
 6. Domantas Kelmanas [(Voopieq)](https://github.com/Voopieq) on GitHub
 
 ## License
