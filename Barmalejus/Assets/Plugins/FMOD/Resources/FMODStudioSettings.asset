@@ -552,9 +552,8 @@ MonoBehaviour:
   - Master
   Banks:
   - IslandAmbience
-  - Music
+  - ItemPickup
   - SFX
-  - UI
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
