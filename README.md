@@ -43,3 +43,22 @@ git clone https://github.com/GvidasDev/Barmalejaus-nuotykiai.git
 4. Navigate to the directory where you cloned the repository and select the folder.
 5. Click **Open** to add the project to Unity Hub.
 6. Select the project from the list in Unity Hub to open it in Unity Editor.
+
+### 3. Resolve Dependencies (if any)
+Unity may prompt you to download required packages or assets. If so, follow the prompts to ensure all dependencies are resolved.
+
+### 4. Run the Game
+1. In Unity Editor, navigate to the **File** menu and select **Build Settings**.
+2. Ensure the correct platform is selected (e.g., PC, Mac & Linux).
+3. Drag and drop the scene files from the **Assets/Scenes** folder to the **Scenes In Build** list.
+4. Click **Build and Run** to compile and run the game.
+
+## Credits
+1. Sandra Lastauskaitė [(SandLast)](https://github.com/SandLast) on GitHub
+2. Gvidas Viliušas [(GvidasDev)](https://github.com/GvidasDev) on GitHub
+3. Simona Miežlaiškytė [(SIMs0na)](https://github.com/SIMs0na) on GitHub
+4. Saulius Šniaukšta [(Z0RAS)](https://github.com/Z0RAS) on GitHub
+5. Laura Barišauskaitė [()]() on GitHub
+6. Domantas Kelmanas [(Voopieq)](https://github.com/Voopieq) on GitHub
+
+
